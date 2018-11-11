@@ -670,3 +670,52 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+h3 {
+  color: #d99054; }
+
+footer {
+  color: white;
+  background: url(../../images/dark-wood@2x.png); }
+  footer img {
+    max-width: 75%; }
+
+.underline {
+  color: white;
+  text-decoration: none; }
+  .underline:hover {
+    color: white;
+    text-decoration: underline; }
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3rem 0; }
+  .footer-container .contact {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  .footer-container .hours {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  .footer-container .logo-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+
+.copyright {
+  text-align: center;
+  padding: 1.5rem 0; }
+
+i {
+  width: 20px; }

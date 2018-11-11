@@ -13,7 +13,7 @@
 
     //todo add search form function 
     //.focus and .blur
-$('body').append('hello');
+$('body').append('');
 
 });
 
