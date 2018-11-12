@@ -13,13 +13,13 @@
 
     //todo add search form function 
     //.focus and .blur
-$('body').append('');
+$('header').append('');
 
 });
 
 })(jQuery);
 
-//
+
 
 //IIFE
 //IMMEDIATELY INVOKED FUNCTION EXPRESSION

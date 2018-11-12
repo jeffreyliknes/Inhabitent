@@ -420,11 +420,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: white; }
   a:visited {
-    color: purple; }
+    color: white; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #caa07ebd; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -670,6 +670,54 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .site-content .content-area {
+    padding-right: 5%; }
+
+.site-main {
+  padding: 5% 5% 0 0;
+  border-right: 1px solid #e1e1e1; }
+
+.entry-header {
+  position: relative;
+  text-transform: capitalize; }
+  .entry-header img {
+    width: 100%;
+    height: 95%; }
+  .entry-header h2 {
+    position: absolute;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    background-color: #248a83;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0;
+    text-transform: uppercase;
+    width: 100%; }
+    .entry-header h2 a {
+      text-decoration: none; }
+  .entry-header .entry-meta {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #248a83;
+    font-size: 1rem;
+    bottom: 7px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px; }
+
 h3 {
   color: #d99054; }
 
@@ -696,7 +744,10 @@ footer {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
   .footer-container .contact {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
@@ -712,10 +763,14 @@ footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    .footer-container .logo-footer a:visited {
+      text-align: right;
+      padding-top: 1rem; }
 
 .copyright {
   text-align: center;
   padding: 1.5rem 0; }
 
 i {
-  width: 20px; }
+  width: 25px;
+  font-size: 1.25rem; }
