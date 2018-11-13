@@ -1,8 +1,11 @@
+
+
+
+
 h3 {
     color: #d99054;
+    
 }
-
-
 
 footer {
     color: white;
@@ -39,6 +42,7 @@ footer {
         display: flex;
         flex-basis: 50%;
         justify-content: flex-end;
+        padding-top: 20px;
         a:visited {
             text-align: right;
             padding-top: 1rem;
@@ -52,6 +56,7 @@ footer {
     
     text-align: center;
     padding: 1.5rem 0;
+    // font-family: 'novecento';
    
 }
 

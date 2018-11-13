@@ -420,7 +420,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: white; }
+  color: #248a83; }
   a:visited {
     color: white; }
   a:hover, a:focus, a:active {
@@ -670,6 +670,12 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Find Us */
+.content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 70%; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,31 +684,30 @@ object {
   margin-right: auto;
   width: 1120px; }
 
-.site-main {
-  padding: 5% 5% 0 0;
-  border-right: 1px solid #e1e1e1; }
-
 .entry-header {
   position: relative;
   text-transform: capitalize; }
   .entry-header img {
     width: 100%;
-    height: 95%; }
-  .entry-header h2 {
+    height: auto; }
+  .entry-header .entry-title {
     position: absolute;
     font-size: 2.3rem;
     letter-spacing: 1px;
     background-color: #248a83;
     left: 0;
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     position: absolute;
     margin-top: 2.25rem;
     max-width: 75%;
     top: 0;
     text-transform: uppercase;
     width: 100%; }
-    .entry-header h2 a {
-      text-decoration: none; }
+    .entry-header .entry-title a {
+      text-decoration: none;
+      color: white; }
+      .entry-header .entry-title a:hover {
+        color: orange; }
   .entry-header .entry-meta {
     position: absolute;
     bottom: 0px;
@@ -710,11 +715,69 @@ object {
     background-color: #248a83;
     font-size: 1rem;
     bottom: 7px;
-    color: white;
     width: 50%;
     text-align: center;
     text-transform: uppercase;
-    padding: 5px; }
+    padding: 5px;
+    color: white; }
+
+.hentry .entry-title {
+  position: absolute;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  background-color: #248a83;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  text-transform: uppercase;
+  width: 100%;
+  color: white; }
+
+.entry-meta {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #248a83;
+  font-size: 1rem;
+  bottom: 7px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  color: white; }
+  .entry-meta a {
+    color: white;
+    text-decoration: none; }
+
+.comment-author-avatar img {
+  border-radius: 50px;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comments-title {
+  font-size: 2rem;
+  margin: 0; }
+
+.comment-list {
+  margin-left: 0;
+  padding-left: 0; }
+  .comment-list .comment {
+    padding-top: 1.75rem; }
+    .comment-list .comment .comment-body {
+      padding-bottom: 1.5rem; }
+
+.children li {
+  border-top: 1px solid #e1e1e1; }
 
 h3 {
   color: #d99054; }
@@ -760,7 +823,8 @@ footer {
         flex-basis: 50%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    padding-top: 20px; }
     .footer-container .logo-footer a:visited {
       text-align: right;
       padding-top: 1rem; }
@@ -801,3 +865,8 @@ i {
 
 .widget-area a:hover {
   color: black; }
+
+body {
+  font-family: "Novecento Sans Web", sans-serif; }
+  body a {
+    font-family: "Novecento Sans Web", sans-serif; }
