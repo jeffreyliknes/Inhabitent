@@ -671,9 +671,44 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Find Us */
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .site-content .find-us-content-area {
+    position: relative; }
+    .site-content .find-us-content-area .type-page {
+      margin: 0 0 4.5rem; }
+      .site-content .find-us-content-area .type-page .entry-header {
+        display: block; }
+        .site-content .find-us-content-area .type-page .entry-header .entry-title {
+          background: white;
+          color: black;
+          margin: 0; }
+
+.entry-content {
+  line-height: 1.75; }
+  .entry-content h2 {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .entry-content p {
+    font-size: 1rem; }
+
+.wpcf7 {
+  text-transform: uppercase; }
+  .wpcf7 .wpcf7-form-control {
+    background: #f4f4f4;
+    border-radius: 0; }
+    .wpcf7 .wpcf7-form-control input {
+      background: #248a83; }
+
 .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%;
+  padding-top: 5%;
   width: 70%; }
 
 .site-content {
@@ -684,13 +719,13 @@ object {
   margin-right: auto;
   width: 1120px; }
 
-.entry-header {
+.status-publish .entry-header {
   position: relative;
   text-transform: capitalize; }
-  .entry-header img {
+  .status-publish .entry-header img {
     width: 100%;
     height: auto; }
-  .entry-header .entry-title {
+  .status-publish .entry-header .entry-title {
     position: absolute;
     font-size: 2.3rem;
     letter-spacing: 1px;
@@ -703,23 +738,24 @@ object {
     top: 0;
     text-transform: uppercase;
     width: 100%; }
-    .entry-header .entry-title a {
+    .status-publish .entry-header .entry-title a {
       text-decoration: none;
       color: white; }
-      .entry-header .entry-title a:hover {
+      .status-publish .entry-header .entry-title a:hover {
         color: orange; }
-  .entry-header .entry-meta {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    background-color: #248a83;
-    font-size: 1rem;
-    bottom: 7px;
-    width: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 5px;
-    color: white; }
+
+.status-publish .entry-meta {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #248a83;
+  font-size: 1rem;
+  bottom: 7px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  color: white; }
 
 .hentry .entry-title {
   position: absolute;
