@@ -33,6 +33,11 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<!-- End of Default loop -->
+
+	
+		
+
 		</main><!-- #main -->
     </div><!-- #primary -->
     

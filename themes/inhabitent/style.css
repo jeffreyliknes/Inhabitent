@@ -670,151 +670,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-/* Find Us */
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-  .site-content .find-us-content-area {
-    position: relative; }
-    .site-content .find-us-content-area .type-page {
-      margin: 0 0 4.5rem; }
-      .site-content .find-us-content-area .type-page .entry-header {
-        display: block; }
-        .site-content .find-us-content-area .type-page .entry-header .entry-title {
-          background: white;
-          color: black;
-          margin: 0; }
-
-.entry-content {
-  line-height: 1.75; }
-  .entry-content h2 {
-    font-size: 2rem;
-    text-transform: uppercase; }
-  .entry-content p {
-    font-size: 1rem; }
-
-.wpcf7 {
-  text-transform: uppercase; }
-  .wpcf7 .wpcf7-form-control {
-    background: #f4f4f4;
-    border-radius: 0; }
-    .wpcf7 .wpcf7-form-control input {
-      background: #248a83; }
-
-.content-area {
-  border-right: 1px solid #e1e1e1;
-  padding-right: 5%;
-  padding-top: 5%;
-  width: 70%; }
-
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-
-.status-publish .entry-header {
-  position: relative;
-  text-transform: capitalize; }
-  .status-publish .entry-header img {
-    width: 100%;
-    height: auto; }
-  .status-publish .entry-header .entry-title {
-    position: absolute;
-    font-size: 2.3rem;
-    letter-spacing: 1px;
-    background-color: #248a83;
-    left: 0;
-    padding: 0.75rem 1.5rem;
-    position: absolute;
-    margin-top: 2.25rem;
-    max-width: 75%;
-    top: 0;
-    text-transform: uppercase;
-    width: 100%; }
-    .status-publish .entry-header .entry-title a {
-      text-decoration: none;
-      color: white; }
-      .status-publish .entry-header .entry-title a:hover {
-        color: orange; }
-
-.status-publish .entry-meta {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #248a83;
-  font-size: 1rem;
-  bottom: 7px;
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px;
-  color: white; }
-
-.hentry .entry-title {
-  position: absolute;
-  font-size: 2.3rem;
-  letter-spacing: 1px;
-  background-color: #248a83;
-  left: 0;
-  padding: 0.75rem 1.5rem;
-  position: absolute;
-  margin-top: 2.25rem;
-  max-width: 75%;
-  top: 0;
-  text-transform: uppercase;
-  width: 100%;
-  color: white; }
-
-.entry-meta {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #248a83;
-  font-size: 1rem;
-  bottom: 7px;
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px;
-  color: white; }
-  .entry-meta a {
-    color: white;
-    text-decoration: none; }
-
-.comment-author-avatar img {
-  border-radius: 50px;
-  height: 64px;
-  margin-right: 1.5rem;
-  overflow: hidden;
-  width: 64px; }
-
-.comment-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.comments-title {
-  font-size: 2rem;
-  margin: 0; }
-
-.comment-list {
-  margin-left: 0;
-  padding-left: 0; }
-  .comment-list .comment {
-    padding-top: 1.75rem; }
-    .comment-list .comment .comment-body {
-      padding-bottom: 1.5rem; }
-
-.children li {
-  border-top: 1px solid #e1e1e1; }
-
 h3 {
   color: #d99054; }
 
@@ -906,3 +761,240 @@ body {
   font-family: "Novecento Sans Web", sans-serif; }
   body a {
     font-family: "Novecento Sans Web", sans-serif; }
+
+/* Find Us */
+.page-template-find-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+  .page-template-find-us .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
+    .page-template-find-us .site-content .find-us-content-area {
+      border-right: 1px solid #e1e1e1;
+      padding-right: 5%;
+      width: 70%; }
+      .page-template-find-us .site-content .find-us-content-area .site-main {
+        display: block; }
+        .page-template-find-us .site-content .find-us-content-area .site-main .type-page {
+          margin: 0 0 4.5rem; }
+          .page-template-find-us .site-content .find-us-content-area .site-main .type-page .entry-header {
+            display: block; }
+            .page-template-find-us .site-content .find-us-content-area .site-main .type-page .entry-header .entry-title {
+              background: white;
+              color: black; }
+          .page-template-find-us .site-content .find-us-content-area .site-main .type-page .entry-content {
+            margin: 1.5rem 0 0; }
+            .page-template-find-us .site-content .find-us-content-area .site-main .type-page .entry-content h2 {
+              font-size: 2rem;
+              text-transform: uppercase; }
+            .page-template-find-us .site-content .find-us-content-area .site-main .type-page .entry-content p {
+              font-size: 1rem;
+              line-height: 1.75; }
+
+.wpcf7 .wpcf7-form .wpcf7-form-control {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+  .home .site-content {
+    padding-top: 0;
+    width: 100%; }
+    .home .site-content .content-area {
+      display: block; }
+      .home .site-content .content-area .frontpage-header {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100vh;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+  .blog .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px; }
+    .blog .site-content .content-area {
+      border-right: 1px solid #e1e1e1;
+      padding-right: 5%;
+      padding-top: 5%;
+      width: 70%; }
+      .blog .site-content .content-area .site-main {
+        display: block; }
+        .blog .site-content .content-area .site-main .entry-header {
+          position: relative;
+          text-transform: capitalize; }
+          .blog .site-content .content-area .site-main .entry-header img {
+            width: 100%;
+            height: auto; }
+          .blog .site-content .content-area .site-main .entry-header .entry-title {
+            position: absolute;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            background-color: #248a83;
+            left: 0;
+            padding: 0.75rem 1.5rem;
+            position: absolute;
+            margin-top: 2.25rem;
+            max-width: 75%;
+            top: 0;
+            text-transform: uppercase;
+            width: 75%;
+            background-color: #248a83; }
+            .blog .site-content .content-area .site-main .entry-header .entry-title a {
+              text-decoration: none;
+              color: white; }
+              .blog .site-content .content-area .site-main .entry-header .entry-title a:hover {
+                color: orange; }
+
+.entry-meta {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #248a83;
+  font-size: 1rem;
+  bottom: 7px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  color: white; }
+
+.single-post .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .single-post .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    width: 70%; }
+    .single-post .site-content .content-area .site-main {
+      display: block; }
+      .single-post .site-content .content-area .site-main .hentry {
+        margin: 0 0 4.5rem; }
+        .single-post .site-content .content-area .site-main .hentry .entry-header {
+          position: relative;
+          text-transform: capitalize; }
+          .single-post .site-content .content-area .site-main .hentry .entry-header img {
+            width: 100%;
+            height: auto; }
+          .single-post .site-content .content-area .site-main .hentry .entry-header .entry-title {
+            color: white;
+            position: absolute;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            background-color: #248a83;
+            left: 0;
+            padding: 0.75rem 1.5rem;
+            position: absolute;
+            margin-top: 2.25rem;
+            max-width: 75%;
+            top: 0;
+            text-transform: uppercase;
+            width: 75%;
+            background-color: #248a83; }
+
+.single-post Comments section .hentry .entry-title {
+  position: absolute;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  background-color: #248a83;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  text-transform: uppercase;
+  width: 100%;
+  color: white; }
+
+.single-post .entry-meta {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #248a83;
+  font-size: 1rem;
+  bottom: 7px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  color: white; }
+  .single-post .entry-meta a {
+    color: white;
+    text-decoration: none; }
+
+.single-post .comment-author-avatar img {
+  border-radius: 50px;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+.single-post .comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-post .comments-title {
+  font-size: 2rem;
+  margin: 0; }
+
+.single-post .comment-list {
+  margin-left: 0;
+  padding-left: 0; }
+  .single-post .comment-list .comment {
+    padding-top: 1.75rem; }
+    .single-post .comment-list .comment .comment-body {
+      padding-bottom: 1.5rem; }
+
+.single-post .children li {
+  border-top: 1px solid #e1e1e1; }

@@ -1,0 +1,31 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  .site-content {
+    padding-top: 0;
+    width: 100%;
+    .content-area {
+       display: block;
+    //   width: 100%;
+    //   border-right: 0;
+    //   padding-right: 0;
+    //   height: 100vh;
+      
+      .frontpage-header {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.4) 0,
+            rgba(0, 0, 0, 0.4)
+          ),
+          #969696 url(../../images/home-hero.jpg) no-repeat top;
+        background-size: cover;
+        display: flex;
+        // flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

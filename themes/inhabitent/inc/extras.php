@@ -25,7 +25,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/logos/inhabitent-logo-text-dark.svg);
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/logos/inhabitent-logo-text-dark.svg);
 		height:65px;
 		width:320px;
 		background-size: 320px 65px;
@@ -48,3 +48,48 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
 
+
+
+
+function inhabitent_dynamic_css() {
+
+	if(!is_page_template('about.php')) {
+		return;
+	}
+
+	// $hero_css = '';
+	// wp_add_inline_style('tent-style', $hero_css);
+
+$image = CFS()->get('about_hero_image');
+
+if(!$image) {
+	
+$hero_css = ".page-template-about .entry-header {
+	background: gray;
+	color: white;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}";
+} else {
+	$hero_css = ".page-template-about .entry-header {
+	background: gray;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%), url({$image});
+	color: white;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover
+	}";
+
+}
+wp_add_inline_style('tent-style', $hero_css);
+}
+
+
+
+add_action('wp_enqueue_scripts', 'inhabitent_dynamic_css');
