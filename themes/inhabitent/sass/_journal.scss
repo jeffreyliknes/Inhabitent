@@ -49,17 +49,36 @@
   }
 }
 
+.front-page-journal {
+  .entry-meta {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #248a83;
+    font-size: 1rem;
+    bottom: 7px;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    color: white;
+  }
+}
 
-.entry-meta {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #248a83;
-  font-size: 1rem;
-  bottom: 7px;
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px;
-  color: white;
+
+.entry-content {
+  a{
+    &:hover {
+      background: #248a83;
+      border-color: #248a83;
+    }
+    color: black;
+    border: black solid 1px;
+    text-decoration: none;
+    padding: 13px;
+    &:hover {
+      color: white;
+    }
+  }
+  
 }

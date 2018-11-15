@@ -35,7 +35,7 @@ get_header(); ?>
 
 		<!-- End of Default loop -->
 
-	
+	   
 		
 
 		</main><!-- #main -->
