@@ -15,32 +15,46 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				<!-- archive title and description -->
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					
+					the_archive_title( '<h1 class="page-title">', '</h1>' );	
 				?>
+				 <div class="single-term-description">
+          <?php the_archive_description(); ?>
+</div>
 				
-			
+<?php endif; ?>
 			</header><!-- .page-header -->
 
 
     <div class="product-container">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
+			
+			<a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
+        <?php the_post_thumbnail( 'medium' ); ?>
+        <?php endif; ?>
+        </a>
+				
+		<div class="archive-product-info">
+          <p class="entry-title">
+            <?php the_title(); ?>
+            <div class="after-title"></div>
+          </p>
+        
+          <p class="product-price">
+            <?php echo CFS()->get( 'price' ); ?>
+          </p>
+        </div>
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+		
 
-		<?php else : ?>
+		
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			
 
-		<?php endif; ?>
+		
 	</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

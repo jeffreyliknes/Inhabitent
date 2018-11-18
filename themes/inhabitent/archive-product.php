@@ -3,63 +3,65 @@
  * The template for displaying archive pages.
  *
  * @package RED_Starter_Theme
+ *  Template Name: Archive Product Template
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		
-
-		<?php if ( have_posts() ) : ?>
-
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+			<?php
+					the_archive_title( '<h2 class="page-title">', '</h2>' );
 				?>
-				<div class="shop-term-container">
-
-			<?php 
-			$terms = get_terms(array(
-			'taxonomy' => 'product_type',
-			'hide_empty' => 0,
-
-			));
-			foreach($terms as $term): ?>
+        <div class="shop-term-container">
+        <?php
+        
+          $terms = get_terms(array(
+            'taxonomy' => 'product_type',
+            'hide_empty' => 0, 
+          ));
+          foreach($terms as $term): ?>
+			
 			<div class="shop-term">
 
-			<p> 
-			<a href="<?php echo get_term_link( $term ); ?>">
-			<?php echo $term->name; ?> </a></p>
-
+              <a href="<?php echo get_term_link($term); ?>">
+                <p><?php echo $term->name; ?></p></a>
+              
 			</div>
-			<?php endforeach;?>
-
-			</div>
-			</header><!-- .page-header -->
-
-
+			
+		<?php endforeach; ?>
+		
+      </div>
+    </header><!-- .page-header -->
+      
     <div class="product-container">
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+	<?php /* Start the Loop */ ?>
+ 
+ <?php while ( have_posts() ) : the_post(); ?>
+      <div class="product-archive">
+		  <!-- returns thumbnail wrapped in an anchor -->
+		<div class="thumbnail-container">
+	  <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
+        <?php the_post_thumbnail( 'medium' ); ?>
+        <?php endif; ?>
+        </a>
+		</div>
+		<div class="archive-product-info">
+          <p class="entry-title">
+            <?php the_title(); ?>
+            <div class="after-title"></div>
+          </p>
+        
+          <p class="product-price">
+            <?php echo CFS()->get( 'price' ); ?>
+          </p>
+        </div>
+    </div>
+    <?php endwhile; ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-	</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-
+    </div><!-- #content -->
+    </main><!-- #main -->
+  </div><!-- #primary -->
+  
 <?php get_footer(); ?>

@@ -1,0 +1,53 @@
+.term-do {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    .site-main {
+      display: block;
+  
+      .page-header {
+        margin: 5rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+  
+      .product-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-right: auto;
+        margin-left: auto;
+        width: 1120px;
+        grid-gap: 30px;
+        .thumbnail-container {
+          position: relative;
+          overflow: hidden;
+          height: 250px;
+  
+          img {
+            left: 50%;
+            min-height: 250px;
+            max-width: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .shop-term-container {
+      display: flex;
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      justify-content: space-evenly;
+      a {
+          color: green;
+          text-decoration: none;
+      }
+  }
