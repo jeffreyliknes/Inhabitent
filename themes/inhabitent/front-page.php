@@ -45,6 +45,8 @@ get_header(); ?>
         </section>
 
         
+
+
         <?php 
 	
 	  /*
@@ -61,33 +63,53 @@ get_header(); ?>
          <h2>Inhabitent Journal</h2>
         
         <div class="frontpage-blog-container">
-         <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-		<article class="journal-entry">
-        <?php 
+            
+            <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+            
+            <article class="journal-entry">
+                
+                <div class="thumbnail-container">
+                <?php 
         
-        if( has_post_thumbnail() ) {
-            the_post_thumbnail('medium');
-        }
+                if( has_post_thumbnail() ) {
+                the_post_thumbnail('medium');
+                }
+                ?>
+                </div>
+
+
+
+                <div class="entry-meta-container">
+            <div class="frontpage-meta-block">
+                    <span class="entry-meta">
+                        <?php
+                            red_starter_posted_on();
+                            echo ' / ';
+                            comments_number( '0 Comments', '1 Comment', '% Comments' );
+                        ?>
+                    </span>
+                
+        
+            <div class="meta-permalink">
+                <a href="<?php echo get_the_permalink(); ?>">
+                <?php  the_title(); ?>
+                </a>
+            </div>
+            </div>
        
-       ?>
+            <a class="read-entry" href="<?php get_the_permalink(); ?>">
+            Read Entry
+            </a>
+       
+            </div>
+    
 
-       <span class="entry-meta">
-       <?php
-        red_starter_posted_on();
-        echo ' / ';
-        comments_number( '0 Comments', '1 Comment', '% Comments' );
-        ?>
-        </span>
-        <a href="<?php echo get_the_permalink(); ?>">
-        <?php  the_title(); ?>
-        </a>
-        <a class="read-more" href="<?php get_the_permalink(); ?>">
-        Read More
-        </a>
-        </article>
+            </article>
 
-        <?php endforeach; wp_reset_postdata(); ?>
-		</div>
+            <?php endforeach; wp_reset_postdata(); ?>
+        
+       
+        </div>
      </section>
         
     </main><!-- #main -->
