@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
         
-<!-- Frontpage hero banner, add the background image with css e.g. background: url(../../images/home-hero.jpg); -->
+<!-- Frontpage hero banner; -->
 
 
        <section class="frontpage-header">
@@ -60,25 +60,17 @@ get_header(); ?>
 
      
      <section class="frontpage-journal">
-         <h2>Inhabitent Journal</h2>
-        
-        <div class="frontpage-blog-container">
-            
-            <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-            
-            <article class="journal-entry">
-                
+         <h2>Inhabitent Journal</h2>      
+        <div class="frontpage-blog-container">           
+            <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>          
+            <article class="journal-entry">              
                 <div class="thumbnail-container">
-                <?php 
-        
+                <?php       
                 if( has_post_thumbnail() ) {
                 the_post_thumbnail('medium');
                 }
                 ?>
                 </div>
-
-
-
                 <div class="entry-meta-container">
             <div class="frontpage-meta-block">
                     <span class="entry-meta">
@@ -87,28 +79,20 @@ get_header(); ?>
                             echo ' / ';
                             comments_number( '0 Comments', '1 Comment', '% Comments' );
                         ?>
-                    </span>
-                
-        
+                    </span> 
             <div class="meta-permalink">
                 <a href="<?php echo get_the_permalink(); ?>">
                 <?php  the_title(); ?>
                 </a>
             </div>
-            </div>
-       
-            <a class="read-entry" href="<?php get_the_permalink(); ?>">
+            </div>     
+            <a class="read-entry" href="<?php echo get_the_permalink(); ?>">
             Read Entry
             </a>
-       
             </div>
-    
-
             </article>
 
-            <?php endforeach; wp_reset_postdata(); ?>
-        
-       
+            <?php endforeach; wp_reset_postdata(); ?> 
         </div>
      </section>
         
