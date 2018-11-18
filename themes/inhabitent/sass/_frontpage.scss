@@ -1,18 +1,14 @@
+// Hero Section
+
 .home {
-  display: flex;
   flex-direction: column;
   min-height: 100vh;
   .site {
-    flex: 1 0 auto;
     .site-content {
       padding-top: 0;
       width: 100%;
       .content-area {
         display: block;
-        //   width: 100%;
-        //   border-right: 0;
-        //   padding-right: 0;
-        //   height: 100vh;
 
         .frontpage-header {
           background: linear-gradient(
@@ -22,11 +18,10 @@
             ),
             #969696 url(../../images/home-hero.jpg) no-repeat top;
           background-size: cover;
-        //   display: flex;
-          // flex-direction: column;
           height: 100vh;
-          //     justify-content: center;
-          //     align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -38,7 +33,6 @@
       position: inherit;
       bottom: 0px;
       right: 0px;
-      //   background-color: #248a83;
       font-size: 1rem;
       bottom: 7px;
       width: 50%;
@@ -46,6 +40,80 @@
       text-transform: uppercase;
       padding: 5px;
       color: white;
+    }
+  }
+}
+
+// Shop Stuff Section
+
+.frontpage-shop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+  .frontpage-block-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    .frontpage-term {
+      line-height: 2;
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      margin: 20px;
+      &:hover {
+        border: 1px solid orange;
+        border-top-width: 5px;
+      }
+      img {
+        width: 70px;
+      }
+      .frontpage-term-link {
+        a {
+          text-decoration: none;
+          border: #248a83 solid 1px;
+          padding: 10px 25px;
+          color: white;
+          background-color: #248a83;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            background-color: #144d49;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Journal blog Section
+
+.frontpage-journal {
+    margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  h2 {
+    text-align: center;
+  }
+
+  .frontpage-blog-container {
+    display: flex;
+    .journal-entry {
+        margin: 15px;
+        img {
+            width: 150px;
+        }
+        .entry-meta {
+            display: block;
+        }
+    }
+    a {
+        color: #144d49;
     }
   }
 }

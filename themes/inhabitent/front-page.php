@@ -21,7 +21,7 @@ get_header(); ?>
        
        <section class="frontpage-shop">
            <h2>Shop Stuff</h2>
-        
+        <div class="frontpage-block-container">
         <?php 
         $terms = get_terms(array(
             'taxonomy' => 'product_type',
@@ -34,23 +34,17 @@ get_header(); ?>
        <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg' ?>" alt="<?php echo $term->name; ?>" />
        
 
-       <p> <?php echo $term->description; ?>
-       <a href="<?php echo get_term_link( $term ); ?>">
+       <p> <?php echo $term->description; ?></p>
+       <p class="frontpage-term-link"><a href="<?php echo get_term_link( $term ); ?>">
        <?php echo $term->name; ?> Stuff</a></p>
-       
-    </section>
-       
-       
-       <?php
-        
-        ?>
 
-      <!-- </div> -->
-     <?php endforeach; ?>
-    
+    </div>
+    <?php endforeach;?>
         
-        
+    </div>
         </section>
+
+        
         <?php 
 	
 	  /*
@@ -63,9 +57,11 @@ get_header(); ?>
        ?>
 
      
-     <section class="front-page-journal">
+     <section class="frontpage-journal">
          <h2>Inhabitent Journal</h2>
-		<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+        
+        <div class="frontpage-blog-container">
+         <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 		<article class="journal-entry">
         <?php 
         
@@ -91,7 +87,7 @@ get_header(); ?>
         </article>
 
         <?php endforeach; wp_reset_postdata(); ?>
-		
+		</div>
      </section>
         
     </main><!-- #main -->

@@ -5,128 +5,196 @@
 /* Links */
 
 a {
-	color: $color__link;
+  color: $color__link;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+  &:visited {
+    color: $color__link-visited;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__link-hover;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
 }
 
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+  clear: both;
+  display: block;
+//   float: left;
+//   width: 100%;
 
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+  ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999rem;
-			z-index: 99999;
+    ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    //   float: left;
+      position: absolute;
+      top: $base__space-unit;
+      left: -999rem;
+      z-index: 99999;
 
-			ul {
-				left: -999rem;
-				top: 0;
-			}
+      ul {
+        left: -999rem;
+        top: 0;
+      }
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
+      li {
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
 
-			a {
-				width: 200px;
-			}
+      a {
+        width: 200px;
+      }
 
-			:hover > a,
-			.focus > a {
-			}
+      :hover > a,
+      .focus > a {
+      }
 
-			a:hover,
-			a.focus {
-			}
-		}
+      a:hover,
+      a.focus {
+      }
+    }
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+  li {
+    // float: left;
+    position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
+    &:hover > a,
+    &.focus > a {
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+  }
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a {
+  }
 }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
 }
 
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
+  .site-main & {
+    margin: 0 0 $base__space-unit;
+    overflow: hidden;
+  }
 
-	.site-main & {
-		margin: 0 0 $base__space-unit;
-		overflow: hidden;
-	}
+  .nav-previous {
+    // float: left;
+    width: 50%;
+  }
 
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
-	}
+  .nav-next {
+    // float: right;
+    text-align: right;
+    width: 50%;
+  }
 }
+
+// Main menu
+
+.site-header {
+  background: rgba(white, 0.8%);
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  .main-nav-container {
+    display: flex;
+    justify-content: space-between;
+	align-content: center;
+	margin-left: auto;
+    margin-right: auto;
+	width: 1120px;
+	button{
+		display: none;
+	}
+	.main-navigation {
+		display: flex;
+		.search-form {
+			.field-set {
+
+			}
+		}
+		.nav-menu {
+			display: flex;
+			li {
+				padding: 0 10px;
+				a {
+					font-size: 1.3rem;
+					color: #248a83;
+				}
+			}
+		}
+	}
+	a {
+		color: green;
+	}
+
+    .header-logo {
+      width: 50px;
+    }
+  }
+}
+a {
+  color: #248a83;
+}
+
+.site-header .search-form .search-field {
+	width: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.site-header .search-form .search-field.show {
+	width: 100px;
+	
+	opacity: 1;
+	
+}
+
+
+
+

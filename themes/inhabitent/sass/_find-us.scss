@@ -1,6 +1,7 @@
 /* Find Us */
 
 .page-template-find-us {
+  margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -22,6 +23,7 @@
             .entry-title {
               background: white;
               color: black;
+              text-transform: uppercase;
             }
           }
           .entry-content {
