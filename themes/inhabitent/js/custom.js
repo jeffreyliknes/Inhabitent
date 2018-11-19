@@ -7,10 +7,7 @@
     $(document).ready(function() {
         $('.main-navigation .icon-search').on('click', function(event) {
             
-          
             event.preventDefault();
-       
-    
           
           $(".search-form .search-field").addClass("show");
           $(".search-form .search-field").focus();

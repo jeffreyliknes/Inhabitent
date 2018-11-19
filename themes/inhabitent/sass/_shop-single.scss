@@ -1,53 +1,71 @@
-.term-do {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+.single-product {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  .site-content {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+
     .site-main {
       display: block;
-  
-      .page-header {
-        margin: 5rem 0;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-  
       .product-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-right: auto;
-        margin-left: auto;
-        width: 1120px;
-        grid-gap: 30px;
-        .thumbnail-container {
-          position: relative;
-          overflow: hidden;
-          height: 250px;
-  
-          img {
-            left: 50%;
-            min-height: 250px;
-            max-width: none;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: auto;
+        display: flex;
+        .image-container {
+          flex-basis: 50%;
+          padding-right: 30px;
+        }
+        .type-product {
+          flex-basis: 50%;
+          padding-left: 30px;
+          margin: 0;
+        }
+
+        .entry-meta {
+          .entry-header {
+            .entry-title {
+              font-size: 3rem;
+              text-transform: uppercase;
+              margin-top: 0;
+              color: $color__orange;
+            }
+          }
+
+          .product-price {
+            font-size: 1.8rem;
+            margin-top: 0;
+          }
+          .entry-content {
+            .BodyA {
+              line-height: 1.75;
+            }
           }
         }
       }
     }
   }
-  
-  
-  .shop-term-container {
-      display: flex;
-      width: 1120px;
-      margin-left: auto;
-      margin-right: auto;
-      justify-content: center;
-      justify-content: space-evenly;
-      a {
-          color: green;
-          text-decoration: none;
+}
+
+.product-icon-container {
+  display: flex;
+  list-style: none;
+  margin: 1.5rem 0;
+  li {
+    padding-right: 20px;
+    a {
+      text-transform: uppercase;
+      padding: 10px 30px;
+      &:hover {
+        background: #248a83;
+        border-color: #248a83;
       }
+      color: black;
+      border: black solid 1px;
+      text-decoration: none;
+      padding: 13px;
+      &:hover {
+        color: white;
+      }
+    }
   }
+}

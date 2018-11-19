@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+<div class="container">
 			<header class="page-header">
 			<?php
 					the_archive_title( '<h2 class="page-title">', '</h2>' );
@@ -59,7 +59,7 @@ get_header(); ?>
         </div>
     </div>
     <?php endwhile; ?>
-
+</div>
     </div><!-- #content -->
     </main><!-- #main -->
   </div><!-- #primary -->

@@ -1,115 +1,99 @@
-
-
 .single-post {
-  .site-content {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px;
-    margin-top: 5.5rem;
-    .content-area {
-      border-right: 1px solid #e1e1e1;
-      padding-right: 5%;
-      width: 70%;
-      .site-main {
-        display: block;
-        .hentry {
-          margin: 0 0 4.5rem;
-          .entry-header {
-            position: relative;
-            text-transform: capitalize;
-            img {
-              width: 100%;
-              height: auto;
-            }
-            .entry-title {
-              color: white;
-              position: absolute;
-              font-size: 2rem;
-              letter-spacing: 1px;
-              background-color: $background-h2-color;
-              left: 0;
-              padding: 0.75rem 1.5rem;
-              position: absolute;
-              margin-top: 2.25rem;
-              max-width: 75%;
-              top: 0;
-              text-transform: uppercase;
-              width: 75%;
-              background-color: #248a83;
-            }
-          }
+  .site-main {
+    display: block;
+    .hentry {
+      margin: 0 0 4.5rem;
+      .entry-header {
+        position: relative;
+        text-transform: capitalize;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .entry-title {
+          color: white;
+          position: absolute;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          background-color: $background-h2-color;
+          left: 0;
+          padding: 0.75rem 1.5rem;
+          position: absolute;
+          margin-top: 2.25rem;
+          max-width: 75%;
+          top: 0;
+          text-transform: uppercase;
+          width: 75%;
+          background-color: #248a83;
         }
       }
     }
   }
 
-
-
-Comments section .hentry {
-  .entry-title {
-    position: absolute;
-    font-size: 2.3rem;
-    letter-spacing: 1px;
-    background-color: $background-h2-color;
-    left: 0;
-    padding: 0.75rem 1.5rem;
-    position: absolute;
-    margin-top: 2.25rem;
-    max-width: 75%;
-    top: 0;
-    text-transform: uppercase;
-    width: 100%;
-    color: white;
-  }
-}
-
-.entry-meta {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #248a83;
-  font-size: 1rem;
-  bottom: 7px;
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px;
-  color: white;
-  a {
-    color: white;
-    text-decoration: none;
-  }
-}
-
-.comment-author-avatar img {
-  border-radius: 50px;
-  height: 64px;
-  margin-right: 1.5rem;
-  overflow: hidden;
-  width: 64px;
-}
-
-.comment-body {
-  display: flex;
-}
-.comments-title {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.comment-list {
-  margin-left: 0;
-  padding-left: 0;
-  .comment {
-    padding-top: 1.75rem;
-    .comment-body {
-      padding-bottom: 1.5rem;
+  Comments section .hentry {
+    .entry-title {
+      position: absolute;
+      font-size: 2.3rem;
+      letter-spacing: 1px;
+      background-color: $background-h2-color;
+      left: 0;
+      padding: 0.75rem 1.5rem;
+      position: absolute;
+      margin-top: 2.25rem;
+      max-width: 75%;
+      top: 0;
+      text-transform: uppercase;
+      width: 100%;
+      color: white;
     }
   }
-}
 
-.children li {
-  border-top: 1px solid #e1e1e1;
-}
+  .entry-meta {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #248a83;
+    font-size: 1rem;
+    bottom: 7px;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .comment-author-avatar img {
+    border-radius: 50px;
+    height: 64px;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    width: 64px;
+  }
+
+  .comment-body {
+    display: flex;
+  }
+  .comments-title {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .comment-list {
+    margin-left: 0;
+    padding-left: 0;
+    .comment {
+      padding-top: 1.75rem;
+      .comment-body {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .children li {
+    border-top: 1px solid #e1e1e1;
+  }
 }
