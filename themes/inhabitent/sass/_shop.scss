@@ -30,6 +30,8 @@
         a {
           color: $color__green;
           text-decoration: none;
+          font-family: "novecento", sans-serif;
+          
         }
       }
     }
@@ -63,10 +65,18 @@
       }
       .archive-product-info {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         padding: 0.3rem;
+        .dots {
+          flex: 1;
+          overflow: hidden;
+          &::after {
+            content: '..............................';
+          }
+        }
         p {
-          margin: 0.5rem;
+          padding-left: 0.5rem;
         }
       }
     }

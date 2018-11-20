@@ -60,9 +60,10 @@
   h2 {
     text-align: center;
     letter-spacing: 2px;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'novecento', sans-serif;
     font-size: 3rem;
     font-weight: 200;
+    text-transform: uppercase
   }
   .frontpage-block-container {
     display: flex;
@@ -113,6 +114,8 @@
     letter-spacing: 2px;
     font-size: 3rem;
     font-weight: 200;
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
   }
 
   .frontpage-blog-container {
@@ -147,12 +150,14 @@
           }
           .meta-permalink {
             margin-bottom: 2.4rem;
+            
             a {
               color: #248a83;
+              font-family: 'novecento', sans-serif;
               text-decoration: none;
               text-transform: uppercase;
-              font-size: 1.3rem;
-              font-weight: 600;
+              font-size: 1.4rem;
+              font-weight: 700;
               &:hover {
                 color: black;
               }

@@ -9,11 +9,19 @@
         background: white;
         color: black;
         text-transform: uppercase;
+        font-family: 'novecento-bold', sans-serif;
+        letter-spacing: 2px;
+        line-height: 1.25;
       }
     }
     .entry-content {
       margin: 1.5rem 0 0;
+      figure {
+        margin: 0;
+      }
       h2 {
+        font-family: 'novecento-bold', sans-serif;
+        letter-spacing: 2px;
         font-size: 2rem;
         text-transform: uppercase;
       }
@@ -27,18 +35,28 @@
 
 .wpcf7 {
   .wpcf7-form {
-    .wpcf7-form-control {
-      background: #248a83;
-      border: none;
-      border-radius: 0;
-      color: #fff;
+   
+    p {
 
-      font-size: 14.4px;
-      font-size: 0.9rem;
-      line-height: 1;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
+      font-family: 'novecento', sans-serif;
+      letter-spacing: 2px;
+      font-size: 2rem;
       text-transform: uppercase;
+      margin-bottom: 2rem;
+      .wpcf7-form-control {
+        color: white;
+        background-color: #f4f4f4;
+        border: $border__solid;
+        border-radius: 0;
+
+        font-size: 14.4px;
+        font-size: 0.9rem;   
+        line-height: 1;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
     }
   }
 }
+

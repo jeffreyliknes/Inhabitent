@@ -12,6 +12,8 @@
       height: auto;
     }
     .entry-title {
+      
+      font-weight: 500;
       position: absolute;
       font-size: 2rem;
       letter-spacing: 1px;
@@ -26,6 +28,7 @@
       width: 75%;
       background-color: #248a83;
       a {
+        font-family: "novecento-bold", sans-serif;
         text-decoration: none;
         color: white;
         &:hover {
@@ -36,15 +39,16 @@
   }
 }
 
-.front-page-journal {
+.single-post, .blog {
   .entry-meta {
+    font-family: "novecento", sans-serif;
     position: absolute;
     bottom: 0px;
     right: 0px;
     background-color: #248a83;
     font-size: 1rem;
-    bottom: 7px;
-    width: 50%;
+    bottom: 6px;
+    width: 55%;
     text-align: center;
     text-transform: uppercase;
     padding: 5px;

@@ -12,9 +12,33 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
+
+	
+
+
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-			<?php the_post_navigation(); ?>
+			<div class="product-icon-container">
+	
+	<li>
+	  <a class="button">
+		<i class="fab fa-facebook-f fa-sm"></i>
+		<span> Like</span>
+	  </a>
+	</li>
+	<li>
+	  <a class="button">
+		<i class="fab fa-twitter fa-sm"></i>
+		<span> Tweet</span>
+	  </a>
+	</li>
+	<li>
+	  <a class="button">
+		<i class="fab fa-pinterest fa-sm"></i>
+		<span> Pin</span>
+	  </a>
+	</li>
+</div>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

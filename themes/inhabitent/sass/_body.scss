@@ -1,8 +1,21 @@
 // Common width and header margins
 
+body {
+  font-family: 'Merriweather', sans-serif;
+  h2 {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+  }
+  p {
+    line-height: 1.75;
+  }
+}
+
 .blog,
 .page-template-find-us,
-.single-post {
+.single-post, .error404 {
   .site-content {
     padding-top: 50px;
     display: flex;
@@ -20,3 +33,6 @@
     }
   }
 }
+
+
+

@@ -2,15 +2,23 @@
 
 .widget-area {
     padding: 3rem 0 3rem 5%;
-    
     min-width: 30%;
+    aside {
+        h2 {
+            font-family: "novecento-bold", sans-serif;
+            font-size: 1.5rem;
+        }
+    }
 }
+
+
 
 
 .sidebar-phone {
     a {
       color: $background-h2-color; 
       text-decoration: none; 
+      font-family: "Merriweather", sans-serif;
     }
     
 }
@@ -37,7 +45,7 @@
         margin: 0 0 3rem;
         padding-left: 0;
         a {
-
+        font-family: 'Merriweather', sans-serif;
         color: $background-h2-color;
         text-decoration: none;
         

@@ -26,8 +26,9 @@
 				  <div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>					
 					<a href="<?php bloginfo( 'url' ); ?>">
+									<img class="header-logo-green" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-tent.svg" alt="Tent Logo"/></a>
+					<a href="<?php bloginfo( 'url' ); ?>">
 									<img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/logos/inhabitent-logo-tent-white.svg" alt="Tent Logo"/></a>
-									
 				  </div>
 				
 				

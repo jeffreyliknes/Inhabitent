@@ -227,43 +227,43 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'novecento-bold';
-  src: url("novecento-bold.eot");
-  src: url("novecento-bold.eot?#iefix") format("embedded-opentype"), url("novecento-bold.woff2") format("woff2"), url("novecento-bold.woff") format("woff"), url("novecento-bold.ttf") format("truetype"), url("novecento-bold.svg#.") format("svg");
+  src: url("../../fonts/novecento-bold.eot");
+  src: url("../../fonts/novecento-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento-bold.woff2") format("woff2"), url("../../fonts/novecento-bold.woff") format("woff"), url("../../fonts/novecento-bold.ttf") format("truetype"), url("../../fonts/novecento-bold.svg#.") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'novecento';
-  src: url("novecento.eot");
-  src: url("novecento.eot?#iefix") format("embedded-opentype"), url("novecento.woff2") format("woff2"), url("novecento.woff") format("woff"), url("novecento.ttf") format("truetype"), url("novecento.svg#.") format("svg");
+  src: url("../../fonts/novecento.eot");
+  src: url("../../fonts/novecento.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecento.woff2") format("woff2"), url("../../fonts/novecento.woff") format("woff"), url("../../fonts/novecento.ttf") format("truetype"), url("../../fonts/novecento.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Light.eot");
-  src: url("Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff"), url("Merriweather-Light.ttf") format("truetype"), url("Merriweather-Light.svg#Merriweather-Light") format("svg");
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Bold.eot");
-  src: url("Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff"), url("Merriweather-Bold.ttf") format("truetype"), url("Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-BoldItalic.eot");
-  src: url("Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff"), url("Merriweather-BoldItalic.ttf") format("truetype"), url("Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-LightItalic.eot");
-  src: url("Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff"), url("Merriweather-LightItalic.ttf") format("truetype"), url("Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
@@ -710,7 +710,9 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 h3 {
-  color: #d99054; }
+  color: #d99054;
+  font-family: "novecento-bold", sans-serif;
+  font-size: 1.2rem; }
 
 footer {
   color: white;
@@ -762,7 +764,9 @@ footer {
 
 .copyright {
   text-align: center;
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+  font-family: 'novecento';
+  text-transform: uppercase; }
 
 i {
   width: 25px;
@@ -771,10 +775,14 @@ i {
 .widget-area {
   padding: 3rem 0 3rem 5%;
   min-width: 30%; }
+  .widget-area aside h2 {
+    font-family: "novecento-bold", sans-serif;
+    font-size: 1.5rem; }
 
 .sidebar-phone a {
   color: #248a83;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Merriweather", sans-serif; }
 
 .sidebar-mail .underline {
   color: #248a83; }
@@ -791,6 +799,7 @@ i {
   margin: 0 0 3rem;
   padding-left: 0; }
   .widget_archive ul a {
+    font-family: 'Merriweather', sans-serif;
     color: #248a83;
     text-decoration: none; }
 
@@ -810,27 +819,40 @@ body {
     .page-template-find-us .type-page .entry-header .entry-title {
       background: white;
       color: black;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: 'novecento-bold', sans-serif;
+      letter-spacing: 2px;
+      line-height: 1.25; }
   .page-template-find-us .type-page .entry-content {
     margin: 1.5rem 0 0; }
+    .page-template-find-us .type-page .entry-content figure {
+      margin: 0; }
     .page-template-find-us .type-page .entry-content h2 {
+      font-family: 'novecento-bold', sans-serif;
+      letter-spacing: 2px;
       font-size: 2rem;
       text-transform: uppercase; }
     .page-template-find-us .type-page .entry-content p {
       font-size: 1rem;
       line-height: 1.75; }
 
-.wpcf7 .wpcf7-form .wpcf7-form-control {
-  background: #248a83;
-  border: none;
-  border-radius: 0;
-  color: #fff;
-  font-size: 14.4px;
-  font-size: 0.9rem;
-  line-height: 1;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase; }
+.wpcf7 .wpcf7-form p {
+  font-family: 'novecento', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem; }
+  .wpcf7 .wpcf7-form p .wpcf7-form-control {
+    color: white;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .home {
   -webkit-box-orient: vertical;
@@ -881,9 +903,10 @@ body {
   .frontpage-shop h2 {
     text-align: center;
     letter-spacing: 2px;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'novecento', sans-serif;
     font-size: 3rem;
-    font-weight: 200; }
+    font-weight: 200;
+    text-transform: uppercase; }
   .frontpage-shop .frontpage-block-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -924,7 +947,9 @@ body {
     text-align: center;
     letter-spacing: 2px;
     font-size: 3rem;
-    font-weight: 200; }
+    font-weight: 200;
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase; }
   .frontpage-journal .frontpage-blog-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -962,10 +987,11 @@ body {
             margin-bottom: 2.4rem; }
             .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink a {
               color: #248a83;
+              font-family: 'novecento', sans-serif;
               text-decoration: none;
               text-transform: uppercase;
-              font-size: 1.3rem;
-              font-weight: 600; }
+              font-size: 1.4rem;
+              font-weight: 700; }
               .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink a:hover {
                 color: black; }
         .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .read-entry {
@@ -1002,6 +1028,7 @@ body {
       height: auto; }
     .blog .entry-header .entry-title,
     .single-post .entry-header .entry-title {
+      font-weight: 500;
       position: absolute;
       font-size: 2rem;
       letter-spacing: 1px;
@@ -1017,20 +1044,22 @@ body {
       background-color: #248a83; }
       .blog .entry-header .entry-title a,
       .single-post .entry-header .entry-title a {
+        font-family: "novecento-bold", sans-serif;
         text-decoration: none;
         color: white; }
         .blog .entry-header .entry-title a:hover,
         .single-post .entry-header .entry-title a:hover {
           color: orange; }
 
-.front-page-journal .entry-meta {
+.single-post .entry-meta, .blog .entry-meta {
+  font-family: "novecento", sans-serif;
   position: absolute;
   bottom: 0px;
   right: 0px;
   background-color: #248a83;
   font-size: 1rem;
-  bottom: 7px;
-  width: 50%;
+  bottom: 6px;
+  width: 55%;
   text-align: center;
   text-transform: uppercase;
   padding: 5px;
@@ -1053,59 +1082,17 @@ body {
 .single-post .site-main {
   display: block; }
   .single-post .site-main .hentry {
-    margin: 0 0 4.5rem; }
-    .single-post .site-main .hentry .entry-header {
-      position: relative;
-      text-transform: capitalize; }
-      .single-post .site-main .hentry .entry-header img {
-        width: 100%;
-        height: auto; }
-      .single-post .site-main .hentry .entry-header .entry-title {
-        color: white;
-        position: absolute;
-        font-size: 2rem;
-        letter-spacing: 1px;
-        background-color: #248a83;
-        left: 0;
-        padding: 0.75rem 1.5rem;
-        position: absolute;
-        margin-top: 2.25rem;
-        max-width: 75%;
-        top: 0;
-        text-transform: uppercase;
-        width: 75%;
-        background-color: #248a83; }
+    margin: 0 0 2.5rem; }
+    .single-post .site-main .hentry .entry-header .entry-title {
+      color: white;
+      font-family: "novecento-bold", sans-serif; }
 
-.single-post Comments section .hentry .entry-title {
-  position: absolute;
-  font-size: 2.3rem;
-  letter-spacing: 1px;
-  background-color: #248a83;
-  left: 0;
-  padding: 0.75rem 1.5rem;
-  position: absolute;
-  margin-top: 2.25rem;
-  max-width: 75%;
-  top: 0;
-  text-transform: uppercase;
-  width: 100%;
-  color: white; }
+.single-post .entry-meta a {
+  color: white;
+  text-decoration: none; }
 
-.single-post .entry-meta {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #248a83;
-  font-size: 1rem;
-  bottom: 7px;
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px;
-  color: white; }
-  .single-post .entry-meta a {
-    color: white;
-    text-decoration: none; }
+.single-post .comments-area {
+  padding-top: 2rem; }
 
 .single-post .comment-author-avatar img {
   border-radius: 50px;
@@ -1125,7 +1112,8 @@ body {
 
 .single-post .comment-list {
   margin-left: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  list-style: none; }
   .single-post .comment-list .comment {
     padding-top: 1.75rem; }
     .single-post .comment-list .comment .comment-body {
@@ -1133,6 +1121,40 @@ body {
 
 .single-post .children li {
   border-top: 1px solid #e1e1e1; }
+
+.cat-links {
+  padding-right: 20px; }
+
+.single-post .entry-footer {
+  background: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'novecento', sans-serif;
+  letter-spacing: 1px; }
+  .single-post .entry-footer a {
+    color: #248A83;
+    text-transform: uppercase;
+    font-family: 'novecento', sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none; }
+
+.comment-author cite {
+  font-family: 'Merriweather', sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+.reply a {
+  text-decoration: none;
+  font-family: 'merriweather', serif; }
+
+.comment-metadata a {
+  text-decoration: none; }
+
+.page-template-about .entry-title {
+  font-family: "novecento", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px; }
 
 .page-template-about .entry-content {
   width: 800px;
@@ -1183,7 +1205,8 @@ body {
                 justify-content: space-evenly; }
         .post-type-archive .site-main .page-header .shop-term-container a {
           color: #248A83;
-          text-decoration: none; }
+          text-decoration: none;
+          font-family: "novecento", sans-serif; }
     .post-type-archive .site-main .product-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1212,11 +1235,22 @@ body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 0.3rem; }
+        .post-type-archive .site-main .product-container .archive-product-info .dots {
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          overflow: hidden; }
+          .post-type-archive .site-main .product-container .archive-product-info .dots::after {
+            content: '..............................'; }
         .post-type-archive .site-main .product-container .archive-product-info p {
-          margin: 0.5rem; }
+          padding-left: 0.5rem; }
 
 .site-content {
   padding-top: 50px; }
@@ -1316,15 +1350,20 @@ body {
           padding-left: 30px;
           margin: 0; }
         .single-product .site-content .site-main .product-container .entry-meta .entry-header .entry-title {
-          font-size: 3rem;
+          font-size: 2.8rem;
+          font-family: "novecento", sans-serif;
           text-transform: uppercase;
-          margin-top: 0;
+          margin: 0 0 0.5rem 0;
           color: #d99054; }
         .single-product .site-content .site-main .product-container .entry-meta .product-price {
-          font-size: 1.8rem;
-          margin-top: 0; }
+          font-family: "novecento", sans-serif;
+          font-size: 1.8rem; }
+          .single-product .site-content .site-main .product-container .entry-meta .product-price p {
+            margin-top: 0; }
         .single-product .site-content .site-main .product-container .entry-meta .entry-content .BodyA {
-          line-height: 1.75; }
+          line-height: 1.75 !important;
+          margin-top: 0;
+          font-family: "Merriweather", sans-serif; }
 
 .product-icon-container {
   display: -webkit-box;
@@ -1367,9 +1406,11 @@ body {
   .icon-search i:hover {
     color: rgba(212, 188, 144, 0.781); }
 
-.home .icon-search i, .page-template-about .icon-search i {
+.home .icon-search i,
+.page-template-about .icon-search i {
   color: white; }
-  .home .icon-search i:hover, .page-template-about .icon-search i:hover {
+  .home .icon-search i:hover,
+  .page-template-about .icon-search i:hover {
     color: rgba(212, 188, 144, 0.781); }
 
 .search-form fieldset {
@@ -1383,9 +1424,11 @@ body {
     width: 0;
     color: white; }
 
-.home .site-content, .page-template-about .site-content {
+.home .site-content,
+.page-template-about .site-content {
   padding: 0; }
-  .home .site-content .content-area, .page-template-about .site-content .content-area {
+  .home .site-content .content-area,
+  .page-template-about .site-content .content-area {
     padding: 0; }
 
 .home .site-header,
@@ -1407,10 +1450,8 @@ body {
         align-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 1120px; }
-    .home .site-header .main-nav-container .site-branding .header-logo,
-    .page-template-about .site-header .main-nav-container .site-branding .header-logo {
-      width: 50px; }
+    width: 1120px;
+    font-family: 'Merriweather', serif; }
     .home .site-header .main-nav-container .main-navigation,
     .page-template-about .site-header .main-nav-container .main-navigation {
       display: -webkit-box;
@@ -1433,7 +1474,8 @@ body {
           .home .site-header .main-nav-container .main-navigation .nav-menu li a,
           .page-template-about .site-header .main-nav-container .main-navigation .nav-menu li a {
             font-size: 1rem;
-            color: white; }
+            color: white;
+            font-family: 'novecento', serif; }
             .home .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
             .page-template-about .site-header .main-nav-container .main-navigation .nav-menu li a:hover {
               color: rgba(212, 188, 144, 0.781); }
@@ -1442,7 +1484,8 @@ body {
 .page-template-find-us .site-header,
 .archive .site-header,
 .single-product .site-header,
-.single-post .site-header {
+.single-post .site-header,
+.error404 .site-header {
   background: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
@@ -1455,7 +1498,8 @@ body {
   .page-template-find-us .site-header .main-nav-container,
   .archive .site-header .main-nav-container,
   .single-product .site-header .main-nav-container,
-  .single-post .site-header .main-nav-container {
+  .single-post .site-header .main-nav-container,
+  .error404 .site-header .main-nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1467,17 +1511,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1120px; }
-    .blog .site-header .main-nav-container .site-branding .header-logo,
-    .page-template-find-us .site-header .main-nav-container .site-branding .header-logo,
-    .archive .site-header .main-nav-container .site-branding .header-logo,
-    .single-product .site-header .main-nav-container .site-branding .header-logo,
-    .single-post .site-header .main-nav-container .site-branding .header-logo {
-      width: 40px; }
     .blog .site-header .main-nav-container .main-navigation,
     .page-template-find-us .site-header .main-nav-container .main-navigation,
     .archive .site-header .main-nav-container .main-navigation,
     .single-product .site-header .main-nav-container .main-navigation,
-    .single-post .site-header .main-nav-container .main-navigation {
+    .single-post .site-header .main-nav-container .main-navigation,
+    .error404 .site-header .main-nav-container .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1488,13 +1527,15 @@ body {
       .page-template-find-us .site-header .main-nav-container .main-navigation button,
       .archive .site-header .main-nav-container .main-navigation button,
       .single-product .site-header .main-nav-container .main-navigation button,
-      .single-post .site-header .main-nav-container .main-navigation button {
+      .single-post .site-header .main-nav-container .main-navigation button,
+      .error404 .site-header .main-nav-container .main-navigation button {
         display: none; }
       .blog .site-header .main-nav-container .main-navigation .nav-menu,
       .page-template-find-us .site-header .main-nav-container .main-navigation .nav-menu,
       .archive .site-header .main-nav-container .main-navigation .nav-menu,
       .single-product .site-header .main-nav-container .main-navigation .nav-menu,
-      .single-post .site-header .main-nav-container .main-navigation .nav-menu {
+      .single-post .site-header .main-nav-container .main-navigation .nav-menu,
+      .error404 .site-header .main-nav-container .main-navigation .nav-menu {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
@@ -1502,19 +1543,44 @@ body {
         .page-template-find-us .site-header .main-nav-container .main-navigation .nav-menu li,
         .archive .site-header .main-nav-container .main-navigation .nav-menu li,
         .single-product .site-header .main-nav-container .main-navigation .nav-menu li,
-        .single-post .site-header .main-nav-container .main-navigation .nav-menu li {
+        .single-post .site-header .main-nav-container .main-navigation .nav-menu li,
+        .error404 .site-header .main-nav-container .main-navigation .nav-menu li {
           padding: 0 10px; }
           .blog .site-header .main-nav-container .main-navigation .nav-menu li a,
           .page-template-find-us .site-header .main-nav-container .main-navigation .nav-menu li a,
           .archive .site-header .main-nav-container .main-navigation .nav-menu li a,
           .single-product .site-header .main-nav-container .main-navigation .nav-menu li a,
-          .single-post .site-header .main-nav-container .main-navigation .nav-menu li a {
+          .single-post .site-header .main-nav-container .main-navigation .nav-menu li a,
+          .error404 .site-header .main-nav-container .main-navigation .nav-menu li a {
             font-size: 1rem;
             color: #248a83; }
 
+.blog .header-logo,
+.single-post .header-logo,
+.page-template-find-us .header-logo,
+.archive .header-logo,
+.error404 .header-logo {
+  display: none; }
+
+.home .header-logo-green, .page-template-about .header-logo-green {
+  display: none; }
+
+.header-logo, .header-logo-green {
+  width: 50px; }
+
+body {
+  font-family: 'Merriweather', sans-serif; }
+  body h2 {
+    font-family: 'novecento', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem; }
+  body p {
+    line-height: 1.75; }
+
 .blog .site-content,
 .page-template-find-us .site-content,
-.single-post .site-content {
+.single-post .site-content, .error404 .site-content {
   padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1524,12 +1590,22 @@ body {
   width: 1120px; }
   .blog .site-content .content-area,
   .page-template-find-us .site-content .content-area,
-  .single-post .site-content .content-area {
+  .single-post .site-content .content-area, .error404 .site-content .content-area {
     padding: 3rem 0;
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
     width: 70%; }
     .blog .site-content .content-area .site-main,
     .page-template-find-us .site-content .content-area .site-main,
-    .single-post .site-content .content-area .site-main {
+    .single-post .site-content .content-area .site-main, .error404 .site-content .content-area .site-main {
       display: block; }
+
+.page-header {
+  font-family: 'novecento-bold',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  line-height: 1.75; }
+
+.page-content {
+  font-size: 0.9rem; }
