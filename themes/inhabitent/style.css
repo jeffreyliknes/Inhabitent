@@ -1601,7 +1601,7 @@ body {
       display: block; }
 
 .page-header {
-  font-family: 'novecento-bold',sans-serif;
+  font-family: "novecento-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.1rem;
@@ -1609,3 +1609,44 @@ body {
 
 .page-content {
   font-size: 0.9rem; }
+  .page-content a {
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    color: #248A83; }
+
+.error-404 .search-form fieldset {
+  width: 150px;
+  margin-left: 1px;
+  padding: 0;
+  border: none;
+  margin: 0; }
+  .error-404 .search-form fieldset .icon-search,
+  .error-404 .search-form fieldset .search-submit {
+    display: none; }
+  .error-404 .search-form fieldset input[type='search'] {
+    padding: inherit;
+    font-family: "Merriweather", serif;
+    width: auto;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 5px 10px;
+    color: #666; }
+
+.error-404 .widget_archive p {
+  margin-bottom: 10px; }
+
+.error-404 .widget {
+  margin: 2.3rem 0; }
+  .error-404 .widget ul {
+    margin: 0;
+    padding-left: 0; }
+    .error-404 .widget ul li {
+      list-style: none;
+      padding-bottom: 0.5rem; }
+  .error-404 .widget h2 {
+    font-size: 1.5rem; }
+
+select {
+  font-family: "Merriweather", serif; }
