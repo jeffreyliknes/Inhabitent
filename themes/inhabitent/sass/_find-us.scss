@@ -35,9 +35,7 @@
 
 .wpcf7 {
   .wpcf7-form {
-   
     p {
-
       font-family: 'novecento', sans-serif;
       letter-spacing: 2px;
       font-size: 2rem;
@@ -45,12 +43,10 @@
       margin-bottom: 2rem;
       .wpcf7-form-control {
         color: white;
-        background-color: #f4f4f4;
         border: $border__solid;
         border-radius: 0;
-
         font-size: 14.4px;
-        font-size: 0.9rem;   
+        font-size: 0.9rem;
         line-height: 1;
         padding: 0.75rem 1.5rem;
         text-decoration: none;
@@ -60,3 +56,19 @@
   }
 }
 
+input[type='submit'] {
+  text-decoration: none;
+  border: $color__green solid 1px;
+  padding: 10px 25px;
+  color: white;
+  background-color: $color__green;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: none;
+  border-radius: 0;
+  line-height: 1.75;
+  text-shadow: none;
+  &:hover {
+    background-color: darken($color__green, 10%);
+  }
+}

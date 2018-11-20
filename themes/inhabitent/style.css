@@ -844,7 +844,6 @@ body {
   margin-bottom: 2rem; }
   .wpcf7 .wpcf7-form p .wpcf7-form-control {
     color: white;
-    background-color: #f4f4f4;
     border: 1px solid #e1e1e1;
     border-radius: 0;
     font-size: 14.4px;
@@ -853,6 +852,22 @@ body {
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase; }
+
+input[type='submit'] {
+  text-decoration: none;
+  border: #248A83 solid 1px;
+  padding: 10px 25px;
+  color: white;
+  background-color: #248A83;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  line-height: 1.75;
+  text-shadow: none; }
+  input[type='submit']:hover {
+    background-color: #19625d; }
 
 .home {
   -webkit-box-orient: vertical;
@@ -924,20 +939,20 @@ body {
         font-family: 'Merriweather', serif;
         font-size: 1rem; }
       .frontpage-shop .frontpage-block-container .frontpage-term:hover {
-        border: 1px solid orange;
+        border: 1px solid #d99054;
         border-top-width: 5px; }
       .frontpage-shop .frontpage-block-container .frontpage-term img {
         width: 70px; }
       .frontpage-shop .frontpage-block-container .frontpage-term .frontpage-term-link a {
         text-decoration: none;
-        border: #248a83 solid 1px;
+        border: #248A83 solid 1px;
         padding: 10px 25px;
         color: white;
-        background-color: #248a83;
+        background-color: #248A83;
         text-decoration: none;
         text-transform: uppercase; }
         .frontpage-shop .frontpage-block-container .frontpage-term .frontpage-term-link a:hover {
-          background-color: #144d49; }
+          background-color: #19625d; }
 
 .frontpage-journal {
   margin-left: auto;
@@ -1041,7 +1056,7 @@ body {
       top: 0;
       text-transform: uppercase;
       width: 75%;
-      background-color: #248a83; }
+      background-color: #248A83; }
       .blog .entry-header .entry-title a,
       .single-post .entry-header .entry-title a {
         font-family: "novecento-bold", sans-serif;
@@ -1049,14 +1064,14 @@ body {
         color: white; }
         .blog .entry-header .entry-title a:hover,
         .single-post .entry-header .entry-title a:hover {
-          color: orange; }
+          color: #caa07ebd; }
 
 .single-post .entry-meta, .blog .entry-meta {
   font-family: "novecento", sans-serif;
   position: absolute;
   bottom: 0px;
   right: 0px;
-  background-color: #248a83;
+  background-color: #248A83;
   font-size: 1rem;
   bottom: 6px;
   width: 55%;
@@ -1074,8 +1089,8 @@ body {
   text-decoration: none;
   padding: 13px; }
   .entry-content a:hover {
-    background: #248a83;
-    border-color: #248a83; }
+    background: #248A83;
+    border-color: #248A83; }
   .entry-content a:hover {
     color: white; }
 
@@ -1083,13 +1098,18 @@ body {
   display: block; }
   .single-post .site-main .hentry {
     margin: 0 0 2.5rem; }
-    .single-post .site-main .hentry .entry-header .entry-title {
+    .single-post .site-main .hentry .entry-title {
       color: white;
       font-family: "novecento-bold", sans-serif; }
 
-.single-post .entry-meta a {
-  color: white;
-  text-decoration: none; }
+.single-post .entry-meta {
+  color: white; }
+  .single-post .entry-meta a {
+    color: white;
+    text-decoration: none;
+    font-family: "novecento", sans-serif; }
+    .single-post .entry-meta a:hover {
+      color: #fff9c0; }
 
 .single-post .comments-area {
   padding-top: 2rem; }
@@ -1137,6 +1157,8 @@ body {
     font-family: 'novecento', sans-serif;
     letter-spacing: 1px;
     text-decoration: none; }
+    .single-post .entry-footer a:hover {
+      color: black; }
 
 .comment-author cite {
   font-family: 'Merriweather', sans-serif;
@@ -1144,11 +1166,60 @@ body {
   font-weight: 700; }
 
 .reply a {
+  color: #248A83;
   text-decoration: none;
-  font-family: 'merriweather', serif; }
+  font-family: "Merriweather", serif; }
+  .reply a:hover {
+    color: black; }
 
 .comment-metadata a {
-  text-decoration: none; }
+  color: #248A83;
+  text-decoration: none;
+  font-family: "Merriweather", serif; }
+  .comment-metadata a:hover {
+    color: black; }
+
+.comment-respond h3 {
+  color: #404040;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.comment-respond .comment-form label {
+  font-family: "novecento", sans-serif;
+  text-transform: uppercase; }
+
+.comment-respond .comment-form label, .comment-respond .comment-form input {
+  display: block; }
+
+.comment-respond .comment-form .comment-form-author, .comment-respond .comment-form .comment-form-email {
+  display: inline-block; }
+  .comment-respond .comment-form .comment-form-author input, .comment-respond .comment-form .comment-form-email input {
+    min-width: 360px; }
+
+.comment-respond .comment-form .comment-form-url input {
+  min-width: 100%; }
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+  color: #666;
+  background-color: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 0; }
+
+.form-submit input[type=submit] {
+  text-decoration: none;
+  border: #248A83 solid 1px;
+  padding: 10px 25px;
+  color: white;
+  background-color: #248A83;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  line-height: 1.75;
+  text-shadow: none; }
+  .form-submit input[type=submit]:hover {
+    background-color: #19625d; }
 
 .page-template-about .entry-title {
   font-family: "novecento", sans-serif;
@@ -1193,6 +1264,9 @@ body {
       text-transform: uppercase;
       letter-spacing: 2px;
       border-bottom: 1px dashed #c8c8c8; }
+      .post-type-archive .site-main .page-header h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem; }
       .post-type-archive .site-main .page-header .shop-term-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1200,6 +1274,7 @@ body {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 1rem;
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly; }
@@ -1207,50 +1282,43 @@ body {
           color: #248A83;
           text-decoration: none;
           font-family: "novecento", sans-serif; }
-    .post-type-archive .site-main .product-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-right: auto;
-      margin-left: auto;
-      width: 1120px;
-      grid-gap: 30px; }
-      .post-type-archive .site-main .product-container .product-archive {
-        border: 1px solid #e1e1e1; }
-      .post-type-archive .site-main .product-container .thumbnail-container {
-        background-color: #e1e1e1;
-        height: 250px;
-        overflow: hidden;
-        position: relative; }
-        .post-type-archive .site-main .product-container .thumbnail-container img {
-          left: 50%;
-          min-height: 250px;
-          max-width: none;
-          position: absolute;
-          top: 50%;
-          -webkit-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
-          width: auto;
-          border-bottom: 5px solid #e1e1e1; }
-      .post-type-archive .site-main .product-container .archive-product-info {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        padding: 0.3rem; }
-        .post-type-archive .site-main .product-container .archive-product-info .dots {
-          -webkit-box-flex: 1;
-              -ms-flex: 1;
-                  flex: 1;
-          overflow: hidden; }
-          .post-type-archive .site-main .product-container .archive-product-info .dots::after {
-            content: '..............................'; }
-        .post-type-archive .site-main .product-container .archive-product-info p {
-          padding-left: 0.5rem; }
+          .post-type-archive .site-main .page-header .shop-term-container a:hover {
+            color: black; }
+    .post-type-archive .site-main .product-container .thumbnail-container {
+      background-color: #e1e1e1;
+      height: 250px;
+      overflow: hidden;
+      position: relative; }
+      .post-type-archive .site-main .product-container .thumbnail-container img {
+        left: 50%;
+        min-height: 250px;
+        max-width: none;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: auto;
+        border-bottom: 5px solid #e1e1e1; }
+    .post-type-archive .site-main .product-container .archive-product-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0.3rem; }
+      .post-type-archive .site-main .product-container .archive-product-info .dots {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        overflow: hidden; }
+        .post-type-archive .site-main .product-container .archive-product-info .dots::after {
+          content: '..............................'; }
+      .post-type-archive .site-main .product-container .archive-product-info p {
+        padding-left: 0.5rem; }
 
 .site-content {
   padding-top: 50px; }
@@ -1389,6 +1457,9 @@ body {
 .menu-main-menu-container {
   text-transform: uppercase; }
 
+body.admin-bar .site-header {
+  top: 30px; }
+
 .site-header .search-form .search-field {
   width: 0;
   overflow: hidden;
@@ -1403,15 +1474,13 @@ body {
 .icon-search i {
   color: #248A83;
   width: 20px; }
-  .icon-search i:hover {
-    color: rgba(212, 188, 144, 0.781); }
 
 .home .icon-search i,
 .page-template-about .icon-search i {
   color: white; }
   .home .icon-search i:hover,
   .page-template-about .icon-search i:hover {
-    color: rgba(212, 188, 144, 0.781); }
+    color: #fff9c0; }
 
 .search-form fieldset {
   border: none; }
@@ -1451,7 +1520,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
-    font-family: 'Merriweather', serif; }
+    font-family: "Merriweather", serif; }
     .home .site-header .main-nav-container .main-navigation,
     .page-template-about .site-header .main-nav-container .main-navigation {
       display: -webkit-box;
@@ -1475,10 +1544,10 @@ body {
           .page-template-about .site-header .main-nav-container .main-navigation .nav-menu li a {
             font-size: 1rem;
             color: white;
-            font-family: 'novecento', serif; }
+            font-family: "novecento", sans-serif; }
             .home .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
             .page-template-about .site-header .main-nav-container .main-navigation .nav-menu li a:hover {
-              color: rgba(212, 188, 144, 0.781); }
+              color: #fff9c0; }
 
 .blog .site-header,
 .page-template-find-us .site-header,
@@ -1553,19 +1622,29 @@ body {
           .single-post .site-header .main-nav-container .main-navigation .nav-menu li a,
           .error404 .site-header .main-nav-container .main-navigation .nav-menu li a {
             font-size: 1rem;
-            color: #248a83; }
+            color: #248A83; }
+            .blog .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
+            .page-template-find-us .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
+            .archive .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
+            .single-product .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
+            .single-post .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
+            .error404 .site-header .main-nav-container .main-navigation .nav-menu li a:hover {
+              color: black; }
 
 .blog .header-logo,
 .single-post .header-logo,
+.single-product .header-logo,
 .page-template-find-us .header-logo,
 .archive .header-logo,
 .error404 .header-logo {
   display: none; }
 
-.home .header-logo-green, .page-template-about .header-logo-green {
+.home .header-logo-green,
+.page-template-about .header-logo-green {
   display: none; }
 
-.header-logo, .header-logo-green {
+.header-logo,
+.header-logo-green {
   width: 50px; }
 
 body {

@@ -21,31 +21,39 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       border-bottom: $border__dashed;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
       .shop-term-container {
         display: flex;
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 1rem;
         justify-content: space-evenly;
         a {
           color: $color__green;
           text-decoration: none;
           font-family: "novecento", sans-serif;
+          &:hover {
+            color: black;
+          }
           
         }
       }
     }
 
     .product-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-right: auto;
-      margin-left: auto;
-      width: 1120px;
-      grid-gap: 30px;
-      .product-archive {
-        border: $border__solid;
-      }
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr 1fr;
+      // margin-right: auto;
+      // margin-left: auto;
+      // width: 1120px;
+      // grid-gap: 30px;
+      // .product-archive {
+      //   border: $border__solid;
+      // }
       .thumbnail-container {
         background-color: #e1e1e1;
         height: 250px;

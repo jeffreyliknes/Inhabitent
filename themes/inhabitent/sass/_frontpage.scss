@@ -79,7 +79,7 @@
         font-size: 1rem;
       }
       &:hover {
-        border: 1px solid orange;
+        border: 1px solid $color__orange;
         border-top-width: 5px;
       }
       img {
@@ -88,14 +88,14 @@
       .frontpage-term-link {
         a {
           text-decoration: none;
-          border: #248a83 solid 1px;
+          border: $color__green solid 1px;
           padding: 10px 25px;
           color: white;
-          background-color: #248a83;
+          background-color: $color__green;
           text-decoration: none;
           text-transform: uppercase;
           &:hover {
-            background-color: #144d49;
+            background-color: darken($color__green, 10%);;
           }
         }
       }

@@ -3,56 +3,26 @@
     display: block;
     .hentry {
       margin: 0 0 2.5rem;
-      .entry-header {
-        // position: relative;
-        // text-transform: capitalize;
-        img {
-          // width: 100%;
-          // height: auto;
-        }
+
         .entry-title {
           color: white;
-          font-family: "novecento-bold", sans-serif;
-          // position: absolute;
-          // font-size: 2rem;
-          // letter-spacing: 1px;
-          // background-color: $background-h2-color;
-          // left: 0;
-          // padding: 0.75rem 1.5rem;
-          // position: absolute;
-          // margin-top: 2.25rem;
-          // max-width: 75%;
-          // top: 0;
-          // text-transform: uppercase;
-          // width: 75%;
-          // background-color: #248a83;
+          font-family: $font__head;
         }
       }
     }
-  }
 
-  Comments section .hentry {
-    .entry-title {
-      // position: absolute;
-      // font-size: 2.3rem;
-      // letter-spacing: 1px;
-      // background-color: $background-h2-color;
-      // left: 0;
-      // padding: 0.75rem 1.5rem;
-      // position: absolute;
-      // margin-top: 2.25rem;
-      // max-width: 75%;
-      // top: 0;
-      // text-transform: uppercase;
-      // width: 100%;
-      // color: white;
-    }
-  }
+
+  
 
   .entry-meta {
+    color: white;
     a {
       color: white;
       text-decoration: none;
+      font-family: $font__accent;
+      &:hover {
+        color: $color__background-ins;
+      }
     }
   }
 
@@ -110,6 +80,9 @@
       font-family: 'novecento', sans-serif;
       letter-spacing: 1px;
       text-decoration: none;
+      &:hover {
+        color: black;
+      }
     }
   }
 }
@@ -124,14 +97,76 @@
 }
 
 .reply {
-  a {
-    text-decoration: none;
-    font-family: 'merriweather', serif;
-  }
+  @include ahover;
 }
 
 .comment-metadata {
-  a {
+  @include ahover;
+}
+
+
+// Comment Posting 
+
+.comment-respond {
+  h3 {
+    color: #404040;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .comment-form {
+    label {
+      font-family: $font__accent;
+      text-transform: uppercase;
+    }
+    label, input {
+      display: block;
+    }
+    
+    .comment-form-author, .comment-form-email {
+      display: inline-block;
+      input {
+        min-width: 360px;
+      }
+      
+      
+    }
+    
+   .comment-form-url {
+     input {
+       min-width: 100%;
+     }
+     
+   }
+ 
+  }
+}
+
+
+
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+  color: #666;
+  background-color: $color__background-screen;
+  border: $border__solid;
+  border-radius: 0;
+}
+
+
+.form-submit {
+  input[type=submit] {
     text-decoration: none;
+    border: $color__green solid 1px;
+    padding: 10px 25px;
+    color: white;
+    background-color: $color__green;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+    border-radius: 0;
+    line-height: 1.75;
+    text-shadow: none;
+    &:hover {
+      background-color: darken($color__green, 10%);;
+    }
   }
 }
