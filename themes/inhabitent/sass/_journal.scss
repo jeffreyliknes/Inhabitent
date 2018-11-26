@@ -1,5 +1,5 @@
 .blog,
-.single-post {
+.single-post, .date {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -12,7 +12,6 @@
       height: auto;
     }
     .entry-title {
-      
       font-weight: 500;
       position: absolute;
       font-size: 2rem;
@@ -28,7 +27,7 @@
       width: 75%;
       background-color: $color__green;
       a {
-        font-family: "novecento-bold", sans-serif;
+        font-family: 'novecento-bold', sans-serif;
         text-decoration: none;
         color: white;
         &:hover {
@@ -39,7 +38,8 @@
   }
 }
 
-.single-post, .blog {
+.single-post,
+.blog, .date {
   .entry-meta {
     font-family: $font__accent;
     position: absolute;

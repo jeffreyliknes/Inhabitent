@@ -114,7 +114,7 @@ body.admin-bar .site-header {
 .archive,
 .single-product,
 .single-post,
-.error404 {
+.error404, .search-results {
   .site-header {
     background: rgba(white, 0.8%);
     border-bottom: $border__solid;
@@ -162,7 +162,7 @@ body.admin-bar .site-header {
 .single-product,
 .page-template-find-us,
 .archive,
-.error404 {
+.error404, .search-results {
   .header-logo {
     display: none;
   }

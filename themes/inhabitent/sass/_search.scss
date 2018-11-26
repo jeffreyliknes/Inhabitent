@@ -1,0 +1,20 @@
+.search-results {
+    .entry-header {
+        img{
+            display: none;
+        }
+        h2{
+            font-size: 2rem;
+            a {
+                text-decoration: none;
+                color: $color__green;
+            }
+        }
+        .entry-meta {
+            font-family: $font__accent;
+            text-transform: uppercase;
+
+        }
+    }
+}
+

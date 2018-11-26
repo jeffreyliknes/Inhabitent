@@ -53,14 +53,12 @@
 // Shop Stuff Section
 
 .frontpage-shop {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
+  display: block;   
+  @include container-block;
   h2 {
     text-align: center;
     letter-spacing: 2px;
-    font-family: 'novecento', sans-serif;
+    font-family: $font__accent;
     font-size: 3rem;
     font-weight: 200;
     text-transform: uppercase
@@ -106,9 +104,7 @@
 // Journal blog Section
 
 .frontpage-journal {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px;
+  @include container-block;
   h2 {
     text-align: center;
     letter-spacing: 2px;
