@@ -1,13 +1,16 @@
 (function($) {
   $(document).ready();
+  
+  const searchForm = $('.search-form .search-field')
+  
   $('.main-navigation .icon-search').on('click', function(event) {
     event.preventDefault();
 
-    $('.search-form .search-field').addClass('show');
-    $('.search-form .search-field').focus();
+    searchForm.addClass('show');
+    searchForm.focus();
   });
 
-  $('.search-form .search-field').on('blur', function(event) {
-    $('.search-form .search-field').removeClass('show');
+  searchForm.on('blur', function() {
+    searchForm.removeClass('show');
   });
 })(jQuery);

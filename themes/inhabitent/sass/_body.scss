@@ -25,7 +25,7 @@ body {
 
 .blog,
 .page-template-find-us,
-.single-post, .error404, .date, .search-results {
+.single-post, .error404, .date, .tag, .search {
   .site-content {
     padding-top: 50px;
     display: flex;
@@ -49,7 +49,7 @@ body {
 
 // Commonalities in Search and Archives page
 
-.search-results, .date {
+.search, .date, .tag {
   .page-title {
       margin: 0;
       padding-bottom: 1rem;

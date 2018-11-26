@@ -1,5 +1,5 @@
 .blog,
-.single-post, .date {
+.single-post, .date, .tag {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -39,7 +39,7 @@
 }
 
 .single-post,
-.blog, .date {
+.blog, .date, .tag {
   .entry-meta {
     font-family: $font__accent;
     position: absolute;
