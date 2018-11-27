@@ -2,7 +2,7 @@
 
 <?php
 /**
- * The main template file.
+ * Template for displaying the Archive page
  *
  * @package RED_Starter_Theme
  */

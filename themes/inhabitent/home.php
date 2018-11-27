@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The front page template file.
  *
  * @package RED_Starter_Theme
  */

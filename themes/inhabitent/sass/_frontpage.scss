@@ -1,9 +1,10 @@
 // Hero Section
 
-
-
-
-
+.main-section-divider {
+  display: block;
+  @include container-block;
+  margin-bottom: 3rem;
+}
 
 .home {
   flex-direction: column;
@@ -53,15 +54,13 @@
 // Shop Stuff Section
 
 .frontpage-shop {
-  display: block;   
-  @include container-block;
   h2 {
     text-align: center;
     letter-spacing: 2px;
     font-family: $font__accent;
     font-size: 3rem;
     font-weight: 200;
-    text-transform: uppercase
+    text-transform: uppercase;
   }
   .frontpage-block-container {
     display: flex;
@@ -93,7 +92,7 @@
           text-decoration: none;
           text-transform: uppercase;
           &:hover {
-            background-color: darken($color__green, 10%);;
+            background-color: darken($color__green, 10%);
           }
         }
       }
@@ -146,7 +145,7 @@
           }
           .meta-permalink {
             margin-bottom: 2.4rem;
-            
+
             a {
               color: #248a83;
               font-family: 'novecento', sans-serif;

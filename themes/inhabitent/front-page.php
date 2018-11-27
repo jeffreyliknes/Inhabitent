@@ -18,7 +18,8 @@ get_header(); ?>
        </section>
       
         <!-- // Get the terms for our products and do some clever stuff with images. -->
-       
+       <div class="main-section-divider">
+
        <section class="frontpage-shop">
            <h2>Shop Stuff</h2>
         <div class="frontpage-block-container">
@@ -95,7 +96,58 @@ get_header(); ?>
             <?php endforeach; wp_reset_postdata(); ?> 
         </div>
      </section>
+
+
+
+
+     <section class="frontpage-adventures">
+         <h2>Latest Adventures</h2>      
+         
+        <article class="journal-entry">   
+             
+            <div class="frontpage-adventures-container">      
+                
+                <div class="canoe-nature">
+                    <h2><a class="adventure-title" href="">
+                        Getting Back to Nature in a Canoe</a></h2>
+                       <a id="adventure-button" href="">Read More</a>
+                </div>   
+                
+                <!-- <div class="half-flex"> -->
+                <div class="friends">
+                    <h2><a class="adventure-title" href="">
+                            A Night with Friends at the Beach</a></h2>
+                            <a id="adventure-button" href="">Read More</a>
+                </div>  
+                    <!-- <div class="quarter-flex"> -->
+                <div class="big-mountain">
+                    <h2><a class="adventure-title" href="">
+                                Taking in the View at Big Mountain</a></h2>
+                                <a id="adventure-button" href="">Read More</a>
+                </div>  
+                <div class="star-gazing">
+                    <h2><a class="adventure-title" href="">
+                                Star-Gazing at the Night Sky</a></h2>
+                                <a id="adventure-button" href="">Read More</a>
+                </div> 
+                    <!-- </div> 
+                </div> -->
+            </div>
+       
         
+        </article>
+            
+
+                
+
+
+
+
+
+
+
+     </section>
+     </div>
     </main><!-- #main -->
     </div><!-- #primary -->
     

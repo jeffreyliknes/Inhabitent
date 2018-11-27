@@ -1,0 +1,88 @@
+
+
+
+
+
+.frontpage-adventures-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 500px;
+  grid-gap: 20px 20px;
+  h2 {
+    padding: 2rem;
+    margin: 0;
+  line-height: 1.2;
+    font-size: 2rem;
+  }
+  .adventure-title {
+    font-size: 2.5rem;
+    font-family: $fontface__main;
+    font-weight: 100;
+   text-transform: none;
+  
+   
+  }
+  .canoe-nature {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../../images/adventure-photos/canoe-girl.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+   
+  }
+
+  .friends {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 3 / span 2;
+    .adventure-title {
+        font-size: 2rem;
+    }
+  }
+
+  .big-mountain {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 3;
+    grid-row: 2 / sp;
+    .adventure-title {
+        font-size: 1.5rem;
+    }
+  }
+  .star-gazing {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../../images/adventure-photos/night-sky.jpg') no-repeat;
+    background-size: cover;
+    background-position: left center;
+    grid-row: 2 / sp;
+    .adventure-title {
+        font-size: 1.5rem;
+       
+    }
+  }
+}
+
+.frontpage-adventures-container {
+    #adventure-button {
+      
+        border: $border__solid;
+        color: white;
+        font-family: $font__accent;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 10px 10px;
+        margin: 2rem;
+        &:hover {
+            background: $color__link;
+            border: $color__link solid 1px;
+            
+
+        }
+    }
+}

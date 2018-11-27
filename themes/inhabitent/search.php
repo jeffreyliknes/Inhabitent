@@ -2,7 +2,7 @@
 
 <?php
 /**
- * The main template file.
+ * The template for displaying the search page.
  *
  * @package RED_Starter_Theme
  */
