@@ -48,7 +48,8 @@ body.admin-bar .site-header {
       box-shadow: none;
       padding: 0 0 0 0.65rem;
       width: 0;
-      color: white;
+      color: black;
+      outline: 0;
     }
   }
 }
@@ -62,6 +63,15 @@ body.admin-bar .site-header {
     .content-area {
       padding: 0;
     }
+  }
+}
+.home,
+.page-template-about {
+  label .search-field {
+    color: white;
+  }
+  ::-webkit-input-placeholder {
+    color: white;
   }
 }
 
@@ -156,15 +166,16 @@ body.admin-bar .site-header {
 
 .search-no-results {
   form {
-    .icon-search{
+    .icon-search {
       display: none;
     }
     .search-field {
       color: #666;
-    background-color: #f1f1f1;
-    border: 1px solid #e1e1e1;
-    border-radius: 0;
-    width: 200px;
+      background-color: #f1f1f1;
+      border: $border__solid;
+      border-radius: 0;
+      width: 200px;
+      outline: 0;
     }
     button {
       display: none;

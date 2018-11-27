@@ -8,10 +8,7 @@
 
 .page-template-about {
   .entry-title {
-    font-family: "novecento", sans-serif;
-    text-transform: uppercase;
-    font-size: 3rem;
-    letter-spacing: 2px;
+    @include entryTitle;
   }
   
   

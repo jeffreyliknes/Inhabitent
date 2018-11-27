@@ -1,16 +1,17 @@
 // Common width and header margins
 
 body {
-  font-family: 'Merriweather', sans-serif;
+  font-family: $fontface__main;
   h2 {
-    font-family: 'novecento', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 2.5rem;
+    @include entryTitle;
   }
   p {
     line-height: 1.75;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .content-area {
@@ -18,9 +19,7 @@ body {
 }
 
 .container {
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
+  @include container-block;
 }
 
 .blog,
@@ -29,9 +28,7 @@ body {
   .site-content {
     padding-top: 50px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1120px;
+    @include container-block;
     .content-area {
       padding: 3rem 0;
       border-right: $border__solid;
