@@ -98,7 +98,7 @@ add_action('wp_enqueue_scripts', 'inhabitent_dynamic_css');
 // Replaces the excerpt "Read More" text by a link
 function inhabitent_excerpt_more( $more ) {
 	global $post;
- return '<p><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More &rarr;</a></p>';
+ return ' [...]<p><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More &rarr;</a></p>';
 }
 add_filter('excerpt_more', 'inhabitent_excerpt_more');
 

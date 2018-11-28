@@ -1,8 +1,3 @@
-
-
-
-
-
 .frontpage-adventures-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,16 +7,14 @@
   h2 {
     padding: 2rem;
     margin: 0;
-  line-height: 1.2;
+    line-height: 1.2;
     font-size: 2rem;
   }
   .adventure-title {
     font-size: 2.5rem;
     font-family: $fontface__main;
     font-weight: 100;
-   text-transform: none;
-  
-   
+    text-transform: none;
   }
   .canoe-nature {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -30,7 +23,6 @@
     background-position: center;
     grid-column: 1 / span 2;
     grid-row: 1 / span 3;
-   
   }
 
   .friends {
@@ -40,7 +32,7 @@
     background-position: center;
     grid-column: 3 / span 2;
     .adventure-title {
-        font-size: 2rem;
+      font-size: 2rem;
     }
   }
 
@@ -52,7 +44,7 @@
     grid-column: 3;
     grid-row: 2 / sp;
     .adventure-title {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
   }
   .star-gazing {
@@ -62,27 +54,39 @@
     background-position: left center;
     grid-row: 2 / sp;
     .adventure-title {
-        font-size: 1.5rem;
-       
+      font-size: 1.5rem;
     }
   }
 }
 
 .frontpage-adventures-container {
-    #adventure-button {
-      
-        border: $border__solid;
-        color: white;
-        font-family: $font__accent;
-        text-transform: uppercase;
-        font-size: 1rem;
-        padding: 10px 10px;
-        margin: 2rem;
-        &:hover {
-            background: $color__link;
-            border: $color__link solid 1px;
-            
-
-        }
+  #adventure-button {
+    border: $border__solid;
+    color: white;
+    font-family: $font__accent;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 10px 10px;
+    margin: 2rem;
+    &:hover {
+      background: $color__link;
+      border: $color__link solid 1px;
     }
+  }
+}
+
+.more-adventures-container {
+  padding: 2rem 0;
+  .more-adventures {
+    text-decoration: none;
+    border: $color__green solid 1px;
+    padding: 10px 25px;
+    color: white;
+    background-color: $color__green;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      background-color: darken($color__green, 10%);
+    }
+  }
 }

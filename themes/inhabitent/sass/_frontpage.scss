@@ -43,8 +43,7 @@
       font-size: 1rem;
       bottom: 7px;
       width: 50%;
-      text-align: center;
-      text-transform: uppercase;
+      @include textStyle;
       padding: 5px;
       color: white;
     }
@@ -55,12 +54,7 @@
 
 .frontpage-shop {
   h2 {
-    text-align: center;
-    letter-spacing: 2px;
-    font-family: $font__accent;
-    font-size: 3rem;
-    font-weight: 200;
-    text-transform: uppercase;
+    @include entryTitle 
   }
   .frontpage-block-container {
     display: flex;
@@ -72,7 +66,7 @@
       border-top-width: 5px;
       margin: 20px;
       p {
-        font-family: 'Merriweather', serif;
+        font-family: $fontface__main;
         font-size: 1rem;
       }
       &:hover {
@@ -87,7 +81,7 @@
           text-decoration: none;
           border: $color__green solid 1px;
           padding: 10px 25px;
-          color: white;
+          color: $color__background-body;
           background-color: $color__green;
           text-decoration: none;
           text-transform: uppercase;
@@ -105,12 +99,7 @@
 .frontpage-journal {
   @include container-block;
   h2 {
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 3rem;
-    font-weight: 200;
-    font-family: 'novecento', sans-serif;
-    text-transform: uppercase;
+    @include entryTitle;
   }
 
   .frontpage-blog-container {
@@ -147,8 +136,9 @@
             margin-bottom: 2.4rem;
 
             a {
-              color: #248a83;
-              font-family: 'novecento', sans-serif;
+              
+              color: $color__green;
+              font-family: 'novecento-bold', sans-serif;
               text-decoration: none;
               text-transform: uppercase;
               font-size: 1.4rem;
@@ -162,16 +152,16 @@
 
         .read-entry {
           &:hover {
-            background: #248a83;
-            border-color: #248a83;
+            background: $color__link;
+            border-color: $color__link;
           }
-          color: black;
-          border: black solid 1px;
+          color: $color__heading;
+          border: $color__heading solid 1px;
           text-decoration: none;
           padding: 9px 20px;
           font-weight: 100;
           &:hover {
-            color: white;
+            color: $color__background-body;
           }
         }
       }

@@ -911,18 +911,17 @@ input[type='submit'] {
   font-size: 1rem;
   bottom: 7px;
   width: 50%;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   padding: 5px;
   color: white; }
 
 .frontpage-shop h2 {
-  text-align: center;
-  letter-spacing: 2px;
   font-family: "novecento", sans-serif;
-  font-size: 3rem;
-  font-weight: 200;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  color: #2f1339; }
 
 .frontpage-shop .frontpage-block-container {
   display: -webkit-box;
@@ -938,7 +937,7 @@ input[type='submit'] {
     border-top-width: 5px;
     margin: 20px; }
     .frontpage-shop .frontpage-block-container .frontpage-term p {
-      font-family: 'Merriweather', serif;
+      font-family: "Merriweather", serif;
       font-size: 1rem; }
     .frontpage-shop .frontpage-block-container .frontpage-term:hover {
       border: 1px solid #d99054;
@@ -949,7 +948,7 @@ input[type='submit'] {
       text-decoration: none;
       border: #248A83 solid 1px;
       padding: 10px 25px;
-      color: white;
+      color: #fff;
       background-color: #248A83;
       text-decoration: none;
       text-transform: uppercase; }
@@ -961,12 +960,11 @@ input[type='submit'] {
   margin-right: auto;
   width: 1120px; }
   .frontpage-journal h2 {
-    text-align: center;
+    font-family: "novecento", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.8rem;
     letter-spacing: 2px;
-    font-size: 3rem;
-    font-weight: 200;
-    font-family: 'novecento', sans-serif;
-    text-transform: uppercase; }
+    color: #2f1339; }
   .frontpage-journal .frontpage-blog-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1003,8 +1001,8 @@ input[type='submit'] {
           .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink {
             margin-bottom: 2.4rem; }
             .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink a {
-              color: #248a83;
-              font-family: 'novecento', sans-serif;
+              color: #248A83;
+              font-family: 'novecento-bold', sans-serif;
               text-decoration: none;
               text-transform: uppercase;
               font-size: 1.4rem;
@@ -1012,8 +1010,8 @@ input[type='submit'] {
               .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink a:hover {
                 color: black; }
         .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .read-entry {
-          color: black;
-          border: black solid 1px;
+          color: #2f1339;
+          border: #2f1339 solid 1px;
           text-decoration: none;
           padding: 9px 20px;
           font-weight: 100; }
@@ -1021,7 +1019,7 @@ input[type='submit'] {
             background: #248a83;
             border-color: #248a83; }
           .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .read-entry:hover {
-            color: white; }
+            color: #fff; }
       .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta {
         display: block; }
 
@@ -1168,19 +1166,17 @@ input[type='submit'] {
   font-style: normal;
   font-weight: 700; }
 
-.reply a {
+.reply {
   color: #248A83;
   text-decoration: none;
-  font-family: "Merriweather", serif; }
-  .reply a:hover {
-    color: black; }
+  font-family: "Merriweather", serif;
+  text-transform: uppercase; }
 
-.comment-metadata a {
+.comment-metadata {
   color: #248A83;
   text-decoration: none;
-  font-family: "Merriweather", serif; }
-  .comment-metadata a:hover {
-    color: black; }
+  font-family: "Merriweather", serif;
+  text-transform: uppercase; }
 
 .comment-respond h3 {
   color: #404040;
@@ -1866,3 +1862,16 @@ select {
   .frontpage-adventures-container #adventure-button:hover {
     background: #248a83;
     border: #248a83 solid 1px; }
+
+.more-adventures-container {
+  padding: 2rem 0; }
+  .more-adventures-container .more-adventures {
+    text-decoration: none;
+    border: #248A83 solid 1px;
+    padding: 10px 25px;
+    color: white;
+    background-color: #248A83;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .more-adventures-container .more-adventures:hover {
+      background-color: #19625d; }

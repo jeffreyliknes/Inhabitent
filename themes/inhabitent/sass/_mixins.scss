@@ -18,14 +18,12 @@
 }
 
 @mixin ahover {
-  a {
+
     color: $color__green;
     text-decoration: none;
     font-family: $fontface__main;
-    &:hover {
-      color: black;
-    }
-  }
+    text-transform: uppercase;
+  
 }
 
 //Entry Title
@@ -36,4 +34,11 @@
   font-size: 2.8rem;
   letter-spacing: 2px;
   color: $color__heading;
+  
+}
+
+@mixin textStyle {
+  text-transform: uppercase;
+  text-align: center;
+
 }

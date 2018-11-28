@@ -113,13 +113,13 @@ get_header(); ?>
                        <a id="adventure-button" href="">Read More</a>
                 </div>   
                 
-                <!-- <div class="half-flex"> -->
+              
                 <div class="friends">
                     <h2><a class="adventure-title" href="">
                             A Night with Friends at the Beach</a></h2>
                             <a id="adventure-button" href="">Read More</a>
                 </div>  
-                    <!-- <div class="quarter-flex"> -->
+                   
                 <div class="big-mountain">
                     <h2><a class="adventure-title" href="">
                                 Taking in the View at Big Mountain</a></h2>
@@ -130,10 +130,11 @@ get_header(); ?>
                                 Star-Gazing at the Night Sky</a></h2>
                                 <a id="adventure-button" href="">Read More</a>
                 </div> 
-                    <!-- </div> 
-                </div> -->
+            
             </div>
-       
+            <div class="more-adventures-container">
+                <a class="more-adventures" href="">More Adventures</a>
+            </div>
         
         </article>
             
