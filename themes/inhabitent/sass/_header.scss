@@ -17,10 +17,11 @@ body.admin-bar .site-header {
   overflow: hidden;
   opacity: 0;
   transition: 0.5s;
+  text-transform: uppercase;
 }
 
 .site-header .search-form .search-field.show {
-  width: 160px;
+  width: 200px;
   opacity: 1;
 }
 
@@ -72,6 +73,13 @@ body.admin-bar .site-header {
   }
   ::-webkit-input-placeholder {
     color: white;
+    font-size: 1rem;
+  }
+}
+
+fieldset {
+  label {
+    width: 300px;
   }
 }
 
@@ -170,8 +178,8 @@ body.admin-bar .site-header {
       display: none;
     }
     .search-field {
-      color: #666;
-      background-color: #f1f1f1;
+      color: $color__border-abbr;
+      background-color: $color__background-screen;
       border: $border__solid;
       border-radius: 0;
       width: 200px;

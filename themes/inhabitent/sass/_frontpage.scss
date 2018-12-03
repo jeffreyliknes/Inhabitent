@@ -45,7 +45,7 @@
       width: 50%;
       @include textStyle;
       padding: 5px;
-      color: white;
+      color: $color__background;
     }
   }
 }
@@ -54,7 +54,7 @@
 
 .frontpage-shop {
   h2 {
-    @include entryTitle 
+    @include FPentryTitle;
   }
   .frontpage-block-container {
     display: flex;
@@ -78,13 +78,11 @@
       }
       .frontpage-term-link {
         a {
-          text-decoration: none;
-          border: $color__green solid 1px;
+          border: $border__green;
           padding: 10px 25px;
           color: $color__background-body;
-          background-color: $color__green;
-          text-decoration: none;
-          text-transform: uppercase;
+
+          @include anchor;
           &:hover {
             background-color: darken($color__green, 10%);
           }
@@ -99,7 +97,7 @@
 .frontpage-journal {
   @include container-block;
   h2 {
-    @include entryTitle;
+    @include FPentryTitle;
   }
 
   .frontpage-blog-container {
@@ -136,9 +134,8 @@
             margin-bottom: 2.4rem;
 
             a {
-              
               color: $color__green;
-              font-family: 'novecento-bold', sans-serif;
+              font-family: $font__head;
               text-decoration: none;
               text-transform: uppercase;
               font-size: 1.4rem;
@@ -156,7 +153,7 @@
             border-color: $color__link;
           }
           color: $color__heading;
-          border: $color__heading solid 1px;
+          border: $border__black;
           text-decoration: none;
           padding: 9px 20px;
           font-weight: 100;

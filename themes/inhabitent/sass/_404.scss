@@ -1,6 +1,8 @@
+// Partial for the 404 page
+
+
 .page-header {
-  font-family: $font__head;
-  text-transform: uppercase;
+  @include transformNoviBold;
   letter-spacing: 2px;
   font-size: 1.1rem;
   line-height: 1.75;
@@ -9,9 +11,7 @@
 .page-content {
   font-size: 0.9rem;
   a {
-      font-family: $fontface__main;
-      text-decoration: none;
-      color: $color__green;
+      @include simpleHover;
   }
 }
 

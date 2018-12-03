@@ -11,8 +11,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
         
 <!-- Frontpage hero banner; -->
-
-
        <section class="frontpage-header">
            <img class="logo" src="<?php echo get_template_directory_uri() . "/logos/inhabitent-logo-full.svg"?>" alt="Inhabitent full logo"/>
        </section>
@@ -97,9 +95,7 @@ get_header(); ?>
         </div>
      </section>
 
-
-
-
+<!-- Front page adventures section -->
      <section class="frontpage-adventures">
          <h2>Latest Adventures</h2>      
          

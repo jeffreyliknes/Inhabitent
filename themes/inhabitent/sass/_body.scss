@@ -6,7 +6,7 @@ body {
     @include entryTitle;
   }
   p {
-    line-height: 1.75;
+    @include lineHeight;
   }
 }
 

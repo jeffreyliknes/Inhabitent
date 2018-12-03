@@ -5,11 +5,11 @@
     margin: 0 0 4.5rem;
     .entry-header {
       display: block;
+      color: $color__grey;
       .entry-title {
         background: white;
-        color: black;
-        text-transform: uppercase;
-        font-family: 'novecento-bold', sans-serif;
+        color: $color__grey;
+        @include transformNoviBold;
         letter-spacing: 2px;
         line-height: 1.25;
       }
@@ -20,14 +20,13 @@
         margin: 0;
       }
       h2 {
-        font-family: 'novecento-bold', sans-serif;
+        @include transformNoviBold;
         letter-spacing: 2px;
         font-size: 2rem;
-        text-transform: uppercase;
       }
       p {
         font-size: 1rem;
-        line-height: 1.75;
+        @include lineHeight;
       }
     }
   }
@@ -36,10 +35,9 @@
 .wpcf7 {
   .wpcf7-form {
     p {
-      font-family: 'novecento', sans-serif;
+      @include transformNovi;
       letter-spacing: 2px;
       font-size: 2rem;
-      text-transform: uppercase;
       margin-bottom: 2rem;
       .wpcf7-form-control {
         border: $border__solid;
@@ -48,24 +46,22 @@
         font-size: 0.9rem;
         line-height: 1;
         padding: 0.75rem 1.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
+        @include textStyle;
       }
     }
   }
 }
 
 input[type='submit'] {
-  text-decoration: none;
-  border: $color__green solid 1px;
+  @include textStyle;
+  border: $border__green;
   padding: 10px 25px;
   color: white;
   background-color: $color__green;
-  text-decoration: none;
-  text-transform: uppercase;
+
   box-shadow: none;
   border-radius: 0;
-  line-height: 1.75;
+  @include lineHeight;
   text-shadow: none;
   &:hover {
     background-color: darken($color__green, 10%);

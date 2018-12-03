@@ -5,7 +5,7 @@
     min-width: 30%;
     aside {
         h2 {
-            font-family: "novecento-bold", sans-serif;
+            font-family: $font__head;
             font-size: 1.5rem;
         }
     }
@@ -18,7 +18,7 @@
     a {
       color: $background-h2-color; 
       text-decoration: none; 
-      font-family: "Merriweather", sans-serif;
+      font-family: $fontface__main;
     }
     
 }
@@ -45,7 +45,7 @@
         margin: 0 0 3rem;
         padding-left: 0;
         a {
-        font-family: 'Merriweather', sans-serif;
+        font-family: $fontface__main;
         color: $background-h2-color;
         text-decoration: none;
         
@@ -60,8 +60,9 @@
 }
 
 body {
-    font-family: "Novecento Sans Web", sans-serif;
+    font-family: $font__accent;
     a {
-        font-family: "Novecento Sans Web", sans-serif;
+        font-family: $font__accent;
+        text-transform: uppercase;
     }
 }

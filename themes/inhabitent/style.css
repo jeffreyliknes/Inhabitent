@@ -256,7 +256,7 @@ th {
 @font-face {
   font-family: 'Merriweather';
   src: url("../../fonts/Merriweather-BoldItalic.eot");
-  src: url("../../fonts/../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
@@ -463,7 +463,7 @@ a {
   a:visited {
     color: white; }
   a:hover, a:focus, a:active {
-    color: #caa07ebd; }
+    color: #f0e4d1; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -705,10 +705,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 h3 {
   color: #d99054;
   font-family: "novecento-bold", sans-serif;
@@ -782,7 +778,7 @@ i {
 .sidebar-phone a {
   color: #248a83;
   text-decoration: none;
-  font-family: "Merriweather", sans-serif; }
+  font-family: "Merriweather", serif; }
 
 .sidebar-mail .underline {
   color: #248a83; }
@@ -799,7 +795,7 @@ i {
   margin: 0 0 3rem;
   padding-left: 0; }
   .widget_archive ul a {
-    font-family: 'Merriweather', sans-serif;
+    font-family: "Merriweather", serif;
     color: #248a83;
     text-decoration: none; }
 
@@ -807,20 +803,22 @@ i {
   color: black; }
 
 body {
-  font-family: "Novecento Sans Web", sans-serif; }
+  font-family: "novecento", sans-serif; }
   body a {
-    font-family: "Novecento Sans Web", sans-serif; }
+    font-family: "novecento", sans-serif;
+    text-transform: uppercase; }
 
 /* Find Us */
 .page-template-find-us .type-page {
   margin: 0 0 4.5rem; }
   .page-template-find-us .type-page .entry-header {
-    display: block; }
+    display: block;
+    color: #404040; }
     .page-template-find-us .type-page .entry-header .entry-title {
       background: white;
-      color: black;
+      color: #404040;
+      font-family: "novecento-bold", sans-serif;
       text-transform: uppercase;
-      font-family: 'novecento-bold', sans-serif;
       letter-spacing: 2px;
       line-height: 1.25; }
   .page-template-find-us .type-page .entry-content {
@@ -828,19 +826,19 @@ body {
     .page-template-find-us .type-page .entry-content figure {
       margin: 0; }
     .page-template-find-us .type-page .entry-content h2 {
-      font-family: 'novecento-bold', sans-serif;
+      font-family: "novecento-bold", sans-serif;
+      text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: 2rem;
-      text-transform: uppercase; }
+      font-size: 2rem; }
     .page-template-find-us .type-page .entry-content p {
       font-size: 1rem;
       line-height: 1.75; }
 
 .wpcf7 .wpcf7-form p {
-  font-family: 'novecento', sans-serif;
+  font-family: "novecento", sans-serif;
+  text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 2rem;
-  text-transform: uppercase;
   margin-bottom: 2rem; }
   .wpcf7 .wpcf7-form p .wpcf7-form-control {
     border: 1px solid #e1e1e1;
@@ -849,17 +847,16 @@ body {
     font-size: 0.9rem;
     line-height: 1;
     padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
 
 input[type='submit'] {
-  text-decoration: none;
-  border: #248A83 solid 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: #248a83 solid 1px;
   padding: 10px 25px;
   color: white;
-  background-color: #248A83;
-  text-decoration: none;
-  text-transform: uppercase;
+  background-color: #248a83;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
@@ -914,14 +911,15 @@ input[type='submit'] {
   text-transform: uppercase;
   text-align: center;
   padding: 5px;
-  color: white; }
+  color: #ffffff; }
 
 .frontpage-shop h2 {
   font-family: "novecento", sans-serif;
   text-transform: uppercase;
   font-size: 2.8rem;
   letter-spacing: 2px;
-  color: #2f1339; }
+  color: #2f1339;
+  text-align: center; }
 
 .frontpage-shop .frontpage-block-container {
   display: -webkit-box;
@@ -945,11 +943,10 @@ input[type='submit'] {
     .frontpage-shop .frontpage-block-container .frontpage-term img {
       width: 70px; }
     .frontpage-shop .frontpage-block-container .frontpage-term .frontpage-term-link a {
-      text-decoration: none;
-      border: #248A83 solid 1px;
+      border: #248a83 solid 1px;
       padding: 10px 25px;
       color: #fff;
-      background-color: #248A83;
+      background-color: #248a83;
       text-decoration: none;
       text-transform: uppercase; }
       .frontpage-shop .frontpage-block-container .frontpage-term .frontpage-term-link a:hover {
@@ -964,7 +961,8 @@ input[type='submit'] {
     text-transform: uppercase;
     font-size: 2.8rem;
     letter-spacing: 2px;
-    color: #2f1339; }
+    color: #2f1339;
+    text-align: center; }
   .frontpage-journal .frontpage-blog-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1001,8 +999,8 @@ input[type='submit'] {
           .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink {
             margin-bottom: 2.4rem; }
             .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink a {
-              color: #248A83;
-              font-family: 'novecento-bold', sans-serif;
+              color: #248a83;
+              font-family: "novecento-bold", sans-serif;
               text-decoration: none;
               text-transform: uppercase;
               font-size: 1.4rem;
@@ -1056,7 +1054,7 @@ input[type='submit'] {
       top: 0;
       text-transform: uppercase;
       width: 75%;
-      background-color: #248A83; }
+      background-color: #248a83; }
       .blog .entry-header .entry-title a,
       .single-post .entry-header .entry-title a, .date .entry-header .entry-title a, .tag .entry-header .entry-title a {
         font-family: 'novecento-bold', sans-serif;
@@ -1064,7 +1062,7 @@ input[type='submit'] {
         color: white; }
         .blog .entry-header .entry-title a:hover,
         .single-post .entry-header .entry-title a:hover, .date .entry-header .entry-title a:hover, .tag .entry-header .entry-title a:hover {
-          color: #caa07ebd; }
+          color: #f0e4d1; }
 
 .single-post .entry-meta,
 .blog .entry-meta, .date .entry-meta, .tag .entry-meta {
@@ -1072,7 +1070,7 @@ input[type='submit'] {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  background-color: #248A83;
+  background-color: #248a83;
   font-size: 1rem;
   bottom: 6px;
   width: 55%;
@@ -1090,8 +1088,8 @@ input[type='submit'] {
   text-decoration: none;
   padding: 13px; }
   .entry-content a:hover {
-    background: #248A83;
-    border-color: #248A83; }
+    background: #248a83;
+    border-color: #248a83; }
   .entry-content a:hover {
     color: white; }
 
@@ -1153,7 +1151,7 @@ input[type='submit'] {
   font-family: 'novecento', sans-serif;
   letter-spacing: 1px; }
   .single-post .entry-footer a {
-    color: #248A83;
+    color: #248a83;
     text-transform: uppercase;
     font-family: 'novecento', sans-serif;
     letter-spacing: 1px;
@@ -1167,16 +1165,20 @@ input[type='submit'] {
   font-weight: 700; }
 
 .reply {
-  color: #248A83;
+  color: #248a83;
   text-decoration: none;
   font-family: "Merriweather", serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  border: #248a83 solid 1px; }
 
 .comment-metadata {
-  color: #248A83;
+  color: #248a83;
   text-decoration: none;
   font-family: "Merriweather", serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  border: #248a83 solid 1px; }
 
 .comment-respond h3 {
   color: #404040;
@@ -1206,10 +1208,10 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
 
 .form-submit input[type=submit] {
   text-decoration: none;
-  border: #248A83 solid 1px;
+  border: #248a83 solid 1px;
   padding: 10px 25px;
   color: white;
-  background-color: #248A83;
+  background-color: #248a83;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-box-shadow: none;
@@ -1225,7 +1227,8 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
   text-transform: uppercase;
   font-size: 2.8rem;
   letter-spacing: 2px;
-  color: #2f1339; }
+  color: #2f1339;
+  color: #ffffff; }
 
 .page-template-about .entry-content {
   width: 800px;
@@ -1271,7 +1274,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly; }
         .post-type-archive .site-main .page-header .shop-term-container a {
-          color: #248A83;
+          color: #248a83;
           text-decoration: none;
           font-family: 'novecento', sans-serif; }
           .post-type-archive .site-main .page-header .shop-term-container a:hover {
@@ -1371,7 +1374,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly; }
         .tax-product_type .site-main .page-header .shop-term-container a {
-          color: #248A83;
+          color: #248a83;
           text-decoration: none; }
     .tax-product_type .site-main .product-container {
       display: grid;
@@ -1474,14 +1477,15 @@ body.admin-bar .site-header {
   overflow: hidden;
   opacity: 0;
   -webkit-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  text-transform: uppercase; }
 
 .site-header .search-form .search-field.show {
-  width: 160px;
+  width: 200px;
   opacity: 1; }
 
 .icon-search i {
-  color: #248A83;
+  color: #248a83;
   width: 20px; }
 
 .home .icon-search i,
@@ -1516,7 +1520,11 @@ body.admin-bar .site-header {
 
 .home ::-webkit-input-placeholder,
 .page-template-about ::-webkit-input-placeholder {
-  color: white; }
+  color: white;
+  font-size: 1rem; }
+
+fieldset label {
+  width: 300px; }
 
 .home .site-header,
 .page-template-about .site-header {
@@ -1647,7 +1655,7 @@ body.admin-bar .site-header {
           .error404 .site-header .main-nav-container .main-navigation .nav-menu li a,
           .search .site-header .main-nav-container .main-navigation .nav-menu li a {
             font-size: 1rem;
-            color: #248A83; }
+            color: #248a83; }
             .blog .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
             .page-template-find-us .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
             .archive .site-header .main-nav-container .main-navigation .nav-menu li a:hover,
@@ -1750,7 +1758,7 @@ a {
   .page-content a {
     font-family: "Merriweather", serif;
     text-decoration: none;
-    color: #248A83; }
+    color: #248a83; }
 
 .error-404 .search-form fieldset {
   width: 150px;
@@ -1796,11 +1804,19 @@ select {
   font-size: 2rem; }
   .search .entry-header h2 a {
     text-decoration: none;
-    color: #248A83; }
+    color: #248a83; }
 
 .search .entry-header .entry-meta {
   font-family: "novecento", sans-serif;
   text-transform: uppercase; }
+
+.frontpage-adventures h2 {
+  font-family: "novecento", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  color: #2f1339;
+  text-align: center; }
 
 .frontpage-adventures-container {
   display: grid;
@@ -1816,8 +1832,8 @@ select {
   .frontpage-adventures-container .adventure-title {
     font-size: 2.5rem;
     font-family: "Merriweather", serif;
-    font-weight: 100;
-    text-transform: none; }
+    text-transform: uppercase;
+    font-weight: 100; }
   .frontpage-adventures-container .canoe-nature {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat;
@@ -1866,11 +1882,10 @@ select {
 .more-adventures-container {
   padding: 2rem 0; }
   .more-adventures-container .more-adventures {
-    text-decoration: none;
-    border: #248A83 solid 1px;
+    border: #248a83 solid 1px;
     padding: 10px 25px;
     color: white;
-    background-color: #248A83;
+    background-color: #248a83;
     text-decoration: none;
     text-transform: uppercase; }
     .more-adventures-container .more-adventures:hover {

@@ -1,3 +1,11 @@
+// Partial for the front page Adventures section
+
+.frontpage-adventures {
+  h2 {
+    @include FPentryTitle;
+  }
+}
+
 .frontpage-adventures-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,9 +20,8 @@
   }
   .adventure-title {
     font-size: 2.5rem;
-    font-family: $fontface__main;
+    @include transformMerri;
     font-weight: 100;
-    text-transform: none;
   }
   .canoe-nature {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -62,15 +69,14 @@
 .frontpage-adventures-container {
   #adventure-button {
     border: $border__solid;
-    color: white;
-    font-family: $font__accent;
-    text-transform: uppercase;
+    color: $color__link-visited;
+    @include transformNovi;
     font-size: 1rem;
     padding: 10px 10px;
     margin: 2rem;
     &:hover {
       background: $color__link;
-      border: $color__link solid 1px;
+      border: $border__green;
     }
   }
 }
@@ -78,13 +84,11 @@
 .more-adventures-container {
   padding: 2rem 0;
   .more-adventures {
-    text-decoration: none;
-    border: $color__green solid 1px;
+    border: $border__green;
     padding: 10px 25px;
     color: white;
-    background-color: $color__green;
-    text-decoration: none;
-    text-transform: uppercase;
+
+    @include anchor;
     &:hover {
       background-color: darken($color__green, 10%);
     }

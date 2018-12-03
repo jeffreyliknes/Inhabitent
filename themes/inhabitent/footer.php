@@ -51,20 +51,8 @@
 		    </div>
 			<div class="copyright">
 				  <p>COPYRIGHT &copy; 2019 Inhabitent</p>
-			</div>
-
-				
-				</div>
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+			</div>		
+				</div>		
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

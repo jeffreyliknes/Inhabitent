@@ -17,12 +17,30 @@
   width: 1120px;
 }
 
-@mixin ahover {
+//Anchors and hover over buttons
 
-    color: $color__green;
-    text-decoration: none;
-    font-family: $fontface__main;
-    text-transform: uppercase;
+@mixin simpleHover {
+  font-family: $fontface__main;
+  text-decoration: none;
+  color: $color__green;
+}
+
+@mixin ahover {
+  color: $color__green;
+  text-decoration: none;
+  font-family: $fontface__main;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: $border__green;
+}
+
+@mixin anchor {
+  background-color: $color__green;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin simpleAnchor {
   
 }
 
@@ -34,11 +52,41 @@
   font-size: 2.8rem;
   letter-spacing: 2px;
   color: $color__heading;
-  
 }
+
+@mixin FPentryTitle {
+  font-family: $font__accent;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  color: $color__heading;
+  text-align: center;
+}
+
+@mixin transformNoviBold {
+  font-family: $font__head;
+  text-transform: uppercase;
+}
+
+@mixin transformNovi {
+  font-family: $font__accent;
+  text-transform: uppercase;
+}
+
+@mixin transformMerri {
+  font-family: $fontface__main;
+  text-transform: uppercase;
+}
+
+//uppercased texts
 
 @mixin textStyle {
   text-transform: uppercase;
   text-align: center;
+}
 
+//Typography 
+
+@mixin lineHeight {
+  line-height: 1.75;
 }

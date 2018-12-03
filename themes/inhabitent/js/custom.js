@@ -10,7 +10,7 @@
     searchForm.focus();
   });
 
-  searchForm.on('blur', function() {
+    searchForm.on('blur', function() {
     searchForm.removeClass('show');
   });
 })(jQuery);

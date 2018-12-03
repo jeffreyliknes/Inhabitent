@@ -34,7 +34,7 @@ get_header(); ?>
 
 		<p><?php echo CFS()->get( 'price' ); ?></p>
 
-		</div>
+</div>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -44,33 +44,30 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		?>
-</div>
-	<div class="product-icon-container">
-	
-            <li>
-              <a class="button">
-                <i class="fab fa-facebook-f fa-sm"></i>
-                <span> Like</span>
-              </a>
-            </li>
-            <li>
-              <a class="button">
-                <i class="fab fa-twitter fa-sm"></i>
-                <span> Tweet</span>
-              </a>
-            </li>
-            <li>
-              <a class="button">
-                <i class="fab fa-pinterest fa-sm"></i>
-                <span> Pin</span>
-              </a>
-            </li>
-          
-
-	
-		</div><!-- .entry-meta -->
-
+	</div>
+<div class="product-icon-container">
+		<ul>
+			<li>
+				<a class="button">
+					<i class="fab fa-facebook-f fa-sm"></i>
+					<span> Like</span>
+				</a>
+			</li>
+			<li>
+				<a class="button">
+					<i class="fab fa-twitter fa-sm"></i>
+					<span> Tweet</span>
+				</a>
+			</li>
+			<li>
+				<a class="button">
+					<i class="fab fa-pinterest fa-sm"></i>
+					<span> Pin</span>
+				</a>
+			</li>
+		</ul>
 		
+</div><!-- .entry-meta -->	
 	</div><!-- .entry-content -->
 </div><!-- container -->
 
@@ -81,16 +78,9 @@ get_header(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
-
-		
-
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-	
-
 
 <?php get_footer(); ?>

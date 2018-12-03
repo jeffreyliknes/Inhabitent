@@ -57,9 +57,6 @@ function inhabitent_dynamic_css() {
 		return;
 	}
 
-	// $hero_css = '';
-	// wp_add_inline_style('tent-style', $hero_css);
-
 $image = CFS()->get('about_hero_image');
 
 if(!$image) {

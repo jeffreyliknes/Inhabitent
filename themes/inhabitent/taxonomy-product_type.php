@@ -38,19 +38,15 @@ get_header(); ?>
         </a>
 		</div>
 		<div class="archive-product-info">
-          <!-- <p class="entry-title"> -->
-            <div class="after-title"></div>
-            <?php the_title(); ?>
-            
-        
+      <div class="after-title"></div>
+        <?php the_title(); ?> 
         <div class="dots"></div>
           <p class="product-price"> </p>
-            <?php echo CFS()->get( 'price' ); ?>
-         
+            <?php echo CFS()->get( 'price' ); ?> 
         </div>
-    </div>
+    	</div>
     <?php endwhile; ?>
-</div>
+		</div>
     </div><!-- #content -->
     </main><!-- #main -->
   </div><!-- #primary -->
