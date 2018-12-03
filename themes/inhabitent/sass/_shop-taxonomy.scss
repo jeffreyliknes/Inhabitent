@@ -46,9 +46,7 @@
     .product-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-right: auto;
-      margin-left: auto;
-      width: 1120px;
+      @include container-block;
       grid-gap: 30px;
       .product-archive {
         border: $border__solid;
@@ -67,7 +65,7 @@
           top: 50%;
           transform: translate(-50%, -50%);
           width: auto;
-          border-bottom: 5px solid #e1e1e1;
+          border-bottom: $border__solid;
         }
       }
     }

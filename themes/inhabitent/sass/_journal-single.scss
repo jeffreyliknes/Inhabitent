@@ -71,13 +71,11 @@
   .entry-footer {
     background: none;
     color: black;
-    text-transform: uppercase;
-    font-family: 'novecento', sans-serif;
+    @include transformNovi;
     letter-spacing: 1px;
     a {
       color: $color__green;
-      text-transform: uppercase;
-      font-family: 'novecento', sans-serif;
+      @include transformNovi;
       letter-spacing: 1px;
       text-decoration: none;
       &:hover {
@@ -89,7 +87,7 @@
 
 .comment-author  {
   cite {
-    font-family: 'Merriweather', sans-serif;
+    font-family: $fontface__main;
     font-style: normal;
     font-weight: 700;
   }
@@ -115,8 +113,7 @@
   }
   .comment-form {
     label {
-      font-family: $font__accent;
-      text-transform: uppercase;
+      @include transformNovi;
     }
     label, input {
       display: block;
@@ -158,12 +155,10 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     border: $color__green solid 1px;
     padding: 10px 25px;
     color: white;
-    background-color: $color__green;
-    text-decoration: none;
-    text-transform: uppercase;
+    @include anchor;
     box-shadow: none;
     border-radius: 0;
-    line-height: 1.75;
+    @include lineHeight;
     text-shadow: none;
     &:hover {
       background-color: darken($color__green, 10%);;

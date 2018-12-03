@@ -136,8 +136,7 @@
             a {
               color: $color__green;
               font-family: $font__head;
-              text-decoration: none;
-              text-transform: uppercase;
+              @include textStyle;
               font-size: 1.4rem;
               font-weight: 700;
               &:hover {

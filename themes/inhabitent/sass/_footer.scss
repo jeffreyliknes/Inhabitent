@@ -1,75 +1,61 @@
-
-
-
+// Partial for the footer
 
 h3 {
-    color: #d99054;
-    font-family: "novecento-bold", sans-serif;
-    font-size: 1.2rem;
-    
+  color: $color__orange;
+  @include transformNoviBold;
+  font-size: 1.2rem;
 }
 
 footer {
-    color: white;
-    background: url(../../images/dark-wood@2x.png);
-    img {
-        max-width: 75%;
-    }
+  color: white;
+  background: url(../../images/dark-wood@2x.png);
+  img {
+    max-width: 75%;
+  }
 }
 
 .underline {
+  color: white;
+  text-decoration: none;
+  font-family: $fontface__main;
+  &:hover {
     color: white;
-    text-decoration: none;
-    font-family: 'Merriweather';
-    &:hover {
-       color: white;
-       text-decoration: underline; 
-    }
+    text-decoration: underline;
+  }
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 3rem 0;
-    width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-    .contact {
-        flex-basis: 25%;
-    }
-    .hours {
-        flex-basis: 25%;
-    }
-    .logo-footer {
-        display: flex;
-        flex-basis: 50%;
-        justify-content: flex-end;
-        padding-top: 20px;
-        a:visited {
-            text-align: right;
-            padding-top: 1rem;
-        }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3rem 0;
+  @include container-block;
 
+  .contact {
+    flex-basis: 25%;
+  }
+  .hours {
+    flex-basis: 25%;
+  }
+  .logo-footer {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    padding-top: 20px;
+    a:visited {
+      text-align: right;
+      padding-top: 1rem;
     }
+  }
 }
 
-
 .copyright {
-    
-    text-align: center;
-    padding: 1.5rem 0;
-    font-family: 'novecento';
-    text-transform: uppercase;
-   
+  text-align: center;
+  padding: 1.5rem 0;
+  @include transformNovi;
 }
 
 i {
-    width: 25px;
-    font-size: 1.25rem;
+  width: 25px;
+  font-size: 1.25rem;
 }
-
-
-
-
-

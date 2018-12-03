@@ -708,6 +708,7 @@ object {
 h3 {
   color: #d99054;
   font-family: "novecento-bold", sans-serif;
+  text-transform: uppercase;
   font-size: 1.2rem; }
 
 footer {
@@ -719,7 +720,7 @@ footer {
 .underline {
   color: white;
   text-decoration: none;
-  font-family: 'Merriweather'; }
+  font-family: "Merriweather", serif; }
   .underline:hover {
     color: white;
     text-decoration: underline; }
@@ -735,9 +736,9 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 3rem 0;
-  width: 1120px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 1120px; }
   .footer-container .contact {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
@@ -761,7 +762,7 @@ footer {
 .copyright {
   text-align: center;
   padding: 1.5rem 0;
-  font-family: 'novecento';
+  font-family: "novecento", sans-serif;
   text-transform: uppercase; }
 
 i {
@@ -1001,8 +1002,8 @@ input[type='submit'] {
             .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink a {
               color: #248a83;
               font-family: "novecento-bold", sans-serif;
-              text-decoration: none;
               text-transform: uppercase;
+              text-align: center;
               font-size: 1.4rem;
               font-weight: 700; }
               .frontpage-journal .frontpage-blog-container .journal-entry .entry-meta-container .frontpage-meta-block .meta-permalink a:hover {
@@ -1084,7 +1085,7 @@ input[type='submit'] {
 
 .entry-content a {
   color: black;
-  border: black solid 1px;
+  border: #2f1339 solid 1px;
   text-decoration: none;
   padding: 13px; }
   .entry-content a:hover {
@@ -1147,20 +1148,20 @@ input[type='submit'] {
 .single-post .entry-footer {
   background: none;
   color: black;
+  font-family: "novecento", sans-serif;
   text-transform: uppercase;
-  font-family: 'novecento', sans-serif;
   letter-spacing: 1px; }
   .single-post .entry-footer a {
     color: #248a83;
+    font-family: "novecento", sans-serif;
     text-transform: uppercase;
-    font-family: 'novecento', sans-serif;
     letter-spacing: 1px;
     text-decoration: none; }
     .single-post .entry-footer a:hover {
       color: black; }
 
 .comment-author cite {
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", serif;
   font-style: normal;
   font-weight: 700; }
 
@@ -1307,7 +1308,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       width: auto;
-      border-bottom: 5px solid #e1e1e1; }
+      border-bottom: 1px solid #e1e1e1; }
   .archive .product-container .archive-product-info,
   .archive .archive-product .archive-product-info {
     display: -webkit-box;
@@ -1379,8 +1380,8 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
     .tax-product_type .site-main .product-container {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      margin-right: auto;
       margin-left: auto;
+      margin-right: auto;
       width: 1120px;
       grid-gap: 30px; }
       .tax-product_type .site-main .product-container .product-archive {
@@ -1399,7 +1400,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
           -webkit-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%);
           width: auto;
-          border-bottom: 5px solid #e1e1e1; }
+          border-bottom: 1px solid #e1e1e1; }
 
 .single-product {
   display: -webkit-box;
@@ -1411,9 +1412,9 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
       -ms-flex-direction: column;
           flex-direction: column; }
   .single-product .site-content {
-    width: 1120px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 1120px; }
     .single-product .site-content .site-main {
       display: block; }
       .single-product .site-content .site-main .product-container {
@@ -1443,7 +1444,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
         .single-product .site-content .site-main .product-container .entry-meta .entry-content .BodyA {
           line-height: 1.75 !important;
           margin-top: 0;
-          font-family: "Merriweather", sans-serif; }
+          font-family: "Merriweather", serif; }
 
 .product-icon-container {
   display: -webkit-box;
@@ -1457,7 +1458,7 @@ input[type=email], input[type=password], input[type=search], input[type=text], i
       text-transform: uppercase;
       padding: 10px 30px;
       color: black;
-      border: black solid 1px;
+      border: #2f1339 solid 1px;
       text-decoration: none;
       padding: 13px; }
       .product-icon-container li a:hover {
