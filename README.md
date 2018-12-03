@@ -1,6 +1,6 @@
 Inhabitent - Website that displays a mixture of camping blogs and posts of camping related items for sale.
 
-![Getting Started](themes/inhabitent/images/screenshot.png)
+![Getting Started](themes/inhabitent/images/frontpage-screenshot.png)
 
 Technologies used:
 
