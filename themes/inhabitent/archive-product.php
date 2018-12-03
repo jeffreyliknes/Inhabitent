@@ -28,9 +28,9 @@ get_header(); ?>
           <p><?php echo $term->name; ?></p></a>        
 			  </div>
 			
-		<?php endforeach; ?>		
+		    <?php endforeach; ?>		
     </div>
-    </header><!-- .page-header -->
+  </header><!-- .page-header -->
       
     <div class="product-container">
 	    <?php /* Start the Loop */ ?>
@@ -55,9 +55,9 @@ get_header(); ?>
         </div>
       </div>
     <?php endwhile; ?>
-</div>
+    </div>
     </div><!-- #content -->
-    </main><!-- #main -->
-  </div><!-- #primary -->
+  </main><!-- #main -->
+</div><!-- #primary -->
   
 <?php get_footer(); ?>

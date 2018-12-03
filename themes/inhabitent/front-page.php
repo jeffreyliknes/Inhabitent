@@ -56,8 +56,6 @@ get_header(); ?>
 	 $journal_posts = get_posts( $args ); // returns an array of posts
      
        ?>
-
-     
      <section class="frontpage-journal">
          <h2>Inhabitent Journal</h2>      
         <div class="frontpage-blog-container">           
@@ -113,18 +111,18 @@ get_header(); ?>
                 <div class="friends">
                     <h2><a class="adventure-title" href="">
                             A Night with Friends at the Beach</a></h2>
-                            <a id="adventure-button" href="">Read More</a>
+                        <a id="adventure-button" href="">Read More</a>
                 </div>  
                    
                 <div class="big-mountain">
                     <h2><a class="adventure-title" href="">
-                                Taking in the View at Big Mountain</a></h2>
-                                <a id="adventure-button" href="">Read More</a>
+                            Taking in the View at Big Mountain</a></h2>
+                        <a id="adventure-button" href="">Read More</a>
                 </div>  
                 <div class="star-gazing">
                     <h2><a class="adventure-title" href="">
-                                Star-Gazing at the Night Sky</a></h2>
-                                <a id="adventure-button" href="">Read More</a>
+                            Star-Gazing at the Night Sky</a></h2>
+                        <a id="adventure-button" href="">Read More</a>
                 </div> 
             
             </div>

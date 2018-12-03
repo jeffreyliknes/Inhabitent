@@ -1,11 +1,8 @@
-
-
 Inhabitent - Website that displays a mixture of camping blogs and posts of camping related items for sale.
 
-
+![Getting Started](images/screenshot.png)
 
 Technologies used:
-
 
 Wordpress - Used custom theme to organize pages and posts.
 
@@ -15,39 +12,12 @@ PHP/HTML - Used PHP functions for the backbone display of the website.
 
 Sass - Used to style website and include Mixins for organization.
 
-
 Fontawesome - Icons for media (google+, instagram, twitter): https://fontawesome.com/icons?d=gallery
 
-
 Learned/relection:
-    Working with WordPress (WP) is an intuitive and easy way to organize and build a dynamic website. Learning the proper hierarchy is essential to working with WP to maintain proper functionality. I started using Sass more efficiently to help make css more organized.
+Working with WordPress (WP) is an intuitive and easy way to organize and build a dynamic website. Learning the proper hierarchy is essential to working with WP to maintain proper functionality. I started using Sass more efficiently to help make css more organized.
 
 - Jeff Liknes, Red Academy 2018
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # RED Starter
 
@@ -70,3 +40,5 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 ### 4. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+
+author Jeff Liknes
